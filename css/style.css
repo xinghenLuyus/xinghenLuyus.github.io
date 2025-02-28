@@ -6750,3 +6750,89 @@ pre {
 .iziToast-message {
   word-break: break-all !important;
 }
+@media screen and (max-width: 500px) {
+  .l_header .list-v .aplayer,
+  .l_header .list-v .aplayer-pic {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 64px;
+    height: 64px;
+  }
+}
+.aplayer-container {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  min-height: 100px;
+}
+.aplayer-container meting-js {
+  max-width: 100%;
+}
+.aplayer {
+  max-width: 500px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: var(--color-text);
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+}
+.aplayer .aplayer-list {
+  text-align: left;
+}
+@media screen and (max-width: 500px) {
+  .aplayer {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+}
+.l_header .aplayer-volume-wrap {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none !important;
+}
+#l_main .post,
+#l_side .widget {
+  opacity: 0.8;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+}
+#post.post,
+#docs.post {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+.parallax-mirror {
+  filter: brightness(0.5);
+}
+/* 此处调节字体大小
+.top .title font{
+    font-size: 1em;
+}
+*/
+.top .title span {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -khtml-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+}
+.top .title:hover span:nth-child(1) {
+  margin-right: 10px;
+}
+.top .title:hover span:nth-child(2) {
+  margin-left: 10px;
+}
+.top .title:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff;
+}

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/2025/"/>
+  <link rel="canonical" href="https://xinghenluyus.github.io/archives/2025/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -23,7 +23,9 @@
   <!-- import head_begin begin -->
   <!-- import head_begin end -->
   <!-- Custom Files headBegin begin-->
-  
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+<script defer src="/custom.js"></script>
+<!-- <link rel="stylesheet" href="https://example.com/custom.css"> -->
   <!-- Custom Files headBegin end-->
   <!-- front-matter head_begin begin -->
   <!-- front-matter head_begin end -->
@@ -39,7 +41,7 @@
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Luyus&#39; Blog">
-<meta property="og:url" content="http://example.com/archives/2025/index.html">
+<meta property="og:url" content="https://xinghenluyus.github.io/archives/2025/index.html">
 <meta property="og:site_name" content="Luyus&#39; Blog">
 <meta property="og:description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventur">
 <meta property="og:locale" content="en_US">
@@ -713,6 +715,122 @@ button {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
+}
+.cover-wrapper.dock .menu,
+.cover-wrapper.featured .menu,
+.cover-wrapper.focus .menu {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.cover-wrapper.dock .menu .list-h a,
+.cover-wrapper.featured .menu .list-h a,
+.cover-wrapper.focus .menu .list-h a {
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  line-height: 24px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-bottom: none;
+  text-align: center;
+  align-content: flex-end;
+  color: rgba(68,68,68,0.7);
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper.dock .menu .list-h a,
+  .cover-wrapper.featured .menu .list-h a,
+  .cover-wrapper.focus .menu .list-h a {
+    padding: 12px 8px;
+  }
+}
+.cover-wrapper.dock .menu .list-h a i,
+.cover-wrapper.featured .menu .list-h a i,
+.cover-wrapper.focus .menu .list-h a i {
+  margin: 8px;
+}
+.cover-wrapper.dock .menu .list-h a p,
+.cover-wrapper.featured .menu .list-h a p,
+.cover-wrapper.focus .menu .list-h a p {
+  font-size: 0.875rem;
+}
+.cover-wrapper.dock .menu .list-h a.active,
+.cover-wrapper.featured .menu .list-h a.active,
+.cover-wrapper.focus .menu .list-h a.active {
+  background: var(--color-card);
+  backdrop-filter: none;
+}
+.cover-wrapper.dock .menu .list-h a.active i,
+.cover-wrapper.featured .menu .list-h a.active i,
+.cover-wrapper.focus .menu .list-h a.active i,
+.cover-wrapper.dock .menu .list-h a.active i+p,
+.cover-wrapper.featured .menu .list-h a.active i+p,
+.cover-wrapper.focus .menu .list-h a.active i+p {
+  color: #3dd9b6;
+}
+.cover-wrapper.dock .menu .list-h a.active img+p,
+.cover-wrapper.featured .menu .list-h a.active img+p,
+.cover-wrapper.focus .menu .list-h a.active img+p {
+  color: var(--color-text);
+}
+.cover-wrapper.dock .menu .list-h a:hover,
+.cover-wrapper.featured .menu .list-h a:hover,
+.cover-wrapper.focus .menu .list-h a:hover {
+  background: var(--color-card);
+}
+.cover-wrapper.dock .top {
+  margin-bottom: 48px;
+}
+.cover-wrapper.dock .menu {
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+}
+.cover-wrapper.dock .menu .list-h {
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  margin: 4px;
+}
+.cover-wrapper.dock .menu .list-h a+a {
+  margin-left: 4px;
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper.dock .menu .list-h {
+    overflow-x: scroll;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
+    background: transparent;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
+    background: #3dd9b6;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
+    background: #ff5722;
+  }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .cover-wrapper.dock .menu {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: saturate(200%) blur(20px);
+  }
 }
 @font-face {
   font-family: 'UbuntuMono';
@@ -1627,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1740738870518),
+    lastupdate: new Date(1740760264662),
     sidebar: {
-      for_page: ["blogger","music","category","tagcloud","webinfo"],
+      for_page: ["blogger","category","tagcloud","webinfo"],
       for_post: ["blogger","toc"],
       webinfo: {
         lastupd: {
@@ -1645,6 +1763,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     plugins: {
       message: {"enable":true,"css":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/izitoast/dist/css/iziToast.min.css","js":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/izitoast/dist/js/iziToast.min.js","icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
       fancybox: {"css":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.css","js":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.umd.js"},
+      
+      aplayer: {
+        id: 8370178761,
+        enable:true
+      },
       
       
       
@@ -2324,7 +2447,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="half" class='cover-wrapper  dock' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2332,19 +2455,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">MyBlog</p>
+      <p class="title"><font><span>Hello</span> <span>World</span></font></p>
     
+    
+      <p class="subtitle"><div id="binft"></div></p>
     
   </div>
   <div class='bottom'>
-    
-      <div class="m_search">
-        <form name="searchform" class="form u-search-form">
-          <input type="text" class="input u-search-input" placeholder="在这里搜索Luyus的博客" />
-          <i class="icon fa-solid fa-search fa-fw"></i>
-        </form>
-      </div>
-    
     <div class='menu navigation'>
       <div class='list-h'>
         
@@ -2428,7 +2545,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/28/3/">
+  <link itemprop="mainEntityOfPage" href="https://xinghenluyus.github.io/2025/02/28/3/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Luyus' Blog">
   </span>
@@ -2479,7 +2596,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/28/2/">
+  <link itemprop="mainEntityOfPage" href="https://xinghenluyus.github.io/2025/02/28/2/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Luyus' Blog">
   </span>
@@ -2530,7 +2647,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/28/1/">
+  <link itemprop="mainEntityOfPage" href="https://xinghenluyus.github.io/2025/02/28/1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Luyus' Blog">
   </span>
@@ -2581,7 +2698,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/27/hello-world/">
+  <link itemprop="mainEntityOfPage" href="https://xinghenluyus.github.io/2025/02/27/hello-world/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Luyus' Blog">
   </span>
@@ -2705,15 +2822,6 @@ Qu...
     
       
 
-
-    
-  
-
-  
-    
-    
-      
-
     
   
 
@@ -2751,6 +2859,11 @@ Qu...
 
 
       
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>75 字</div>
+        </div>
+      
 
       
         <div class="webinfo-item">
@@ -2773,7 +2886,7 @@ Qu...
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2025-02-28 日</div>
+          <div id="last-update-show">2025-03-01 日</div>
         </div>
       
     </div>
@@ -2850,6 +2963,22 @@ Qu...
       
         <div class="aplayer-container">
           
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='true'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='true'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='8370178761'
+      list-folded='true'>
+    </meting-js>
+  
 
 
         </div>
@@ -3033,6 +3162,79 @@ Qu...
 
 
 
+
+
+  <script>
+  volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.css");
+  (async () => {
+    // APlayer 需要在  MetingJS 之前加载
+    await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.js")
+    await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
+  
+  })();
+
+  function SetAPlayerPlugin(){
+    let Metings = document.querySelectorAll('meting-js');
+    if (Metings.length === 0) {return;};
+    if (Metings[0].aplayer && Metings[0].aplayer.on) {
+      // improve the accessibility https://web.dev/button-name/
+      document.querySelectorAll(".aplayer-icon-menu").forEach(e=>{
+        e.setAttribute("aria-label","Aplayer Menu")
+      })
+      // message see: /layout/_plugins/message/script.ejs
+      
+        try {
+          setTimeout(() => {
+            Metings.forEach((item, index) => {
+              const aplayerItem = item.aplayer; if(!aplayerItem) return;
+              const rightAplayerCheck = 'true' === 'true'
+                && item.meta.id === '8370178761';
+              if(rightAplayerCheck && typeof RightMenuAplayer !="undefined") RightMenuAplayer.checkAPlayer();
+              if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
+                aplayerItem.on('play', function messagePlay() {
+                  let index = aplayerItem.list.index;
+                  let title = aplayerItem.list.audios[index].title;
+                  let artist = aplayerItem.list.audios[index].artist;
+                  setTimeout(() => {
+                    VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                      icon: 'fa-solid fa-play',
+                      transitionIn: 'flipInX',
+                      transitionOut: 'flipOutX'
+                    });
+                  }, 100)
+                });
+              }
+              if(aplayerItem.events.events.pause.every(item => {return item.name !== 'messagePause'})) {
+                aplayerItem.on('pause', function messagePause() {
+                  let index = aplayerItem.list.index;
+                  let title = aplayerItem.list.audios[index].title;
+                  let artist = aplayerItem.list.audios[index].artist;
+                  setTimeout(() => {
+                    // 歌曲播放结束也会触发 pause 事件，为了避免错误提示，等待一会儿
+                    if(aplayerItem.paused) {
+                      VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                        icon: 'fa-solid fa-pause',
+                        transitionIn: 'flipInX',
+                        transitionOut: 'flipOutX'
+                      });
+                    }
+                  }, 100)
+                });
+              }
+            });
+          }, 500)
+        } catch (error) { console.error(error); }
+      
+    }else{
+      volantis.requestAnimationFrame(SetAPlayerPlugin)
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", ()=>{
+    SetAPlayerPlugin();
+  });
+  volantis.pjax.push(SetAPlayerPlugin);
+</script>
 
 
 
@@ -3352,7 +3554,7 @@ Qu...
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus' Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Luyus' Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2025/","name":"2025"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus' Blog","url":"http://example.com/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus' Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Luyus' Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus' Blog","url":"https://xinghenluyus.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinghenluyus.github.io/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xinghenluyus.github.io/","name":"Luyus' Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xinghenluyus.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xinghenluyus.github.io/archives/2025/","name":"2025"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus' Blog","url":"https://xinghenluyus.github.io/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinghenluyus.github.io/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus' Blog","url":"https://xinghenluyus.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xinghenluyus.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xinghenluyus.github.io/"},"publisher":{"@type":"Organization","name":"Luyus' Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
@@ -3438,4 +3640,5 @@ Qu...
     <!-- Custom Files bodyEnd end-->
     <!-- front-matter body_end begin -->
     <!-- front-matter body_end end -->
-  <script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+  </body>
+</html>
