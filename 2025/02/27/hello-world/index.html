@@ -1812,7 +1812,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1740807673487),
+    lastupdate: new Date(1740808064060),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo"],
       for_post: ["blogger","toc"],
@@ -3377,12 +3377,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     const img_config = {
         min: 1,
         max: 2,
-        root: "http://localhost:4000/img/"
-    };
+        root: "https://xinghen.github.io/img/"
+    }
     let IntervalParallax = null;
     
     function parallax() {
-        console.log("parallax function called"); // 调试输出
         
         let ParallaxWindow = document.querySelector("html");
         
@@ -3392,23 +3391,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         next_parallax();
         Parallax.init();
         IntervalParallax = setInterval(function () {
-            if (!document.hidden) {
+            if(!document.hidden){
                 next_parallax();
             }
-        }, 10000);
+        }, '10000');
     }
     
     function next_parallax() {
-        console.log("next_parallax function called"); // 调试输出
         if (typeof Parallax == "undefined") {
-            console.error("Parallax is undefined");
-            return;
+            return
         }
         
         // 生成随机图片地址
         let index = Math.floor(Math.random() * (img_config.max - img_config.min + 1) + img_config.min);
         let img = `${img_config.root}${index}.jpg`;
-        console.log("Generated image path:", img); // 调试输出图像路径
         Parallax.options.src = img;
         Parallax.start();
     }
@@ -3417,15 +3413,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
     if (!isBot) {
         volantis.js('/js/plugins/parallax.js').then(() => {
-            console.log("volantis.js loaded"); // 调试输出
-            parallax();
-        });
+            parallax()
+        })
         volantis.pjax.send(() => {
-            clearInterval(IntervalParallax);
+            clearInterval(IntervalParallax)
         }, "clearIntervalParallax");
         volantis.pjax.push(parallax);
     }
-</script>
+    </script>
 
 
 
