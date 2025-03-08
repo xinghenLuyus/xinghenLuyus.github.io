@@ -899,6 +899,158 @@ button {
     -moz-opacity: 1;
   }
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #121212;
+    --color-read-bkg: #222;
+    --color-read-post: #444;
+    --color-site-bg: #222;
+    --color-site-inner: #eee;
+    --color-site-footer: #aaa;
+    --color-card: #444;
+    --color-text: #eee;
+    --color-block: #3a3a3a;
+    --color-codeblock: #343a3c;
+    --color-inlinecode: #d56d28;
+    --color-h1: #eee;
+    --color-h2: #eee;
+    --color-h3: #ddd;
+    --color-h4: #ddd;
+    --color-h5: #ddd;
+    --color-h6: #ddd;
+    --color-p: #bbb;
+    --color-list: #aaa;
+    --color-list-hl: #69dfc4;
+    --color-meta: #888;
+    --color-link: #888;
+    --color-copyright-bkg: #21252b;
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(70%) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: rgba(34,34,34,0.9) !important;
+  }
+  :root:not([color-scheme]) .white-box.blur {
+    background: rgba(68,68,68,0.9) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:focus {
+    background: var(--color-site-body) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #121212;
+  --color-read-bkg: #222;
+  --color-read-post: #444;
+  --color-site-bg: #222;
+  --color-site-inner: #eee;
+  --color-site-footer: #aaa;
+  --color-card: #444;
+  --color-text: #eee;
+  --color-block: #3a3a3a;
+  --color-codeblock: #343a3c;
+  --color-inlinecode: #d56d28;
+  --color-h1: #eee;
+  --color-h2: #eee;
+  --color-h3: #ddd;
+  --color-h4: #ddd;
+  --color-h5: #ddd;
+  --color-h6: #ddd;
+  --color-p: #bbb;
+  --color-list: #aaa;
+  --color-list-hl: #69dfc4;
+  --color-meta: #888;
+  --color-link: #888;
+  --color-copyright-bkg: #21252b;
+}
+[color-scheme='dark'] img {
+  filter: brightness(70%) !important;
+}
+[color-scheme='dark'] .blur {
+  background: rgba(34,34,34,0.9) !important;
+}
+[color-scheme='dark'] .white-box.blur {
+  background: rgba(68,68,68,0.9) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:focus {
+  background: var(--color-site-body) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
 @font-face {
   font-family: 'UbuntuMono';
   src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
@@ -1735,10 +1887,21 @@ ul.list-v >li>a:hover {
     padding: 0px;
   }
 }
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
 
   </style>
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
   <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+    <script>
+      let userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }
+    </script>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1812,7 +1975,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1741266770344),
+    lastupdate: new Date(1741420302147),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo"],
       for_post: ["blogger","toc"],
@@ -1838,7 +2001,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
       
       
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","hr","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":true,"musicAlwaysShow":true,"corsAnywhere":null},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"}],"articlePage":[{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"help","name":"常见问题","icon":"fa-solid fa-question","link":"https://volantis.js.org/faqs/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-moon","event":"volantis.dark.toggle()","group":"darkMode"}]}}
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","hr","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":true,"musicAlwaysShow":true,"corsAnywhere":null},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"openImg","name":"打开图片","icon":"fa-solid fa-image","event":"window.open(`${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"help","name":"常见问题","icon":"fa-solid fa-question","link":"https://volantis.js.org/faqs/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-moon","event":"volantis.dark.toggle()","group":"darkMode"}]}}
       
     }
   }
@@ -2620,22 +2783,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='new-meta-box'>
         
           
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    " class="lazyload" data-srcset="" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==<img itemprop="image" src="">
-    <p itemprop="name"></p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-          
-        
-          
             <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-02-27T16:51:40+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
@@ -2647,19 +2794,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>75 words</p>
-    </a>
-  </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>1 min</p>
-    </a>
-  </div>
 
+          
+        
+          
+            
 
           
         
@@ -2740,11 +2879,70 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>75 words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>1 min</p>
+    </a>
+  </div>
+
 
         
       
         
           
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xinghenluyus.github.io/2025/02/27/hello-world/&title=Hello World - Luyus' Blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADsUlEQVR42u3aS1JkMQwEwL7/pWFPBPFckgxqSO966I9fehYVKr8+rNJ6IQAHDhw4Cxy4JXCv4ko///X9jxt8+J7082PPCw4cOHDgwIEDtwwu3VB1o1XwKmz14L79PDhw4MCBAwcO3FK4qQAbbyiEOj3I0989/X5w4MCBAwcOHLi/Ald9Xxp0q4PP6r7AgQMHDhw4cOD+G9z0gPH0oKqBGRw4cODAgQMH7q/AVQeQ1QFoWmR3LyCuafLBgQMHDhw4cOCG4NJ1GmS3vi4/Lzhw4MCBAwcO3BK4qQuCp4PINOB2B5rTCxw4cODAgQMHbgtcOvirBsdqEV0dPF4rzsGBAwcOHDhw4JbBnT7Q7UK4Cp+CpIU6OHDgwIEDBw7cVrg0QJ7CpUV29f1VyBgaHDhw4MCBAwduCVwaUG8H1eqFxluBHhw4cODAgQMHbitcNXimBXa3gK4W1OnnHz3AgQMHDhw4cOCWwHUv/lUDaDU4TxXb1QMBBw4cOHDgwIHbCpfCdC/ypYPG7j7a+wcHDhw4cODAgVsKNxVA06K7+uDdgWocrMGBAwcOHDhw4JbAnV4AnNp4d7CYBtbu9z42+eDAgQMHDhw4cL8EN1X8dovpKnQXNh6EggMHDhw4cODALYE7DYZpYE4Hk9XX3cK6XEiDAwcOHDhw4MAtgUs3WgXpft8t2ON9gAMHDhw4cODALYG7XRh3g2n3INIB53EABgcOHDhw4MCBWwZXLX6rg8/ToB0/YPOAwYEDBw4cOHDg3gUuDahT4FOF93QQBwcOHDhw4MCB2w43HTCnLgp2B4+nBzTW5IMDBw4cOHDgwP0wXApY3dDTAUz/vXpBcayQBgcOHDhw4MCBuwyXDiKroFPBeirIpvsGBw4cOHDgwIHbBjc1qOwWv2nRPV1EH/+HAQcOHDhw4MCBWwo3VtwOQVYvOk59Dhw4cODAgQMHbitctUCuBtA0kKYAU4DfvgYHDhw4cODAgVsC112nG5g+qPT30oFoeQIMDhw4cODAgQP3Q3Cv4jodfN568NN/7xbf4MCBAwcOHDhw2+HSwNsttLtF9VTAjX8PHDhw4MCBAwduKdytwNsNtqf76xbT8cVCcODAgQMHDhy4N4XrDibTi4HVA0wvMF4PwODAgQMHDhw4cEvhbgfe48A6FMzBgQMHDhw4cOC2w1UL6e6Ac6roTn8n/jw4cODAgQMHDtwyuO4A8CNcU4PI8kCyeNDgwIEDBw4cOHBb4KzwwBGAAwcOnAUO3O+uT7hnfrVPJiIUAAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://xinghenluyus.github.io/2025/02/27/hello-world/&text=Hello World - Luyus' Blog"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
 
         
       
@@ -2814,12 +3012,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       <div class='text'>
         
-          <h2>Luyus</h2>
+          <h2>星痕Luyus</h2>
         
         
         
         
-          <p>花有重开日,人无再少年.</p>
+          <p>一个专注于分享踩坑的小站.</p>
         
       </div>
     
@@ -2990,13 +3188,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
-</div>
-      
-    
-      
         <div class='copyright'>
-        <p><a href="/">Copyright © 2025 Luyus</a></p>
+        <p><a href="/">欣赏一下我喜欢的歌呀~</a></p>
 
         </div>
       
@@ -3158,9 +3351,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyImg" data-event="copyImg" data-group="elementImage">
+    <span class="vlts-menu fix-cursor-default event" id="openImg" data-event="window.open(`${__link__}`)" data-group="elementImage">
       <i class="fa-solid fa-image fa-fw"></i>
-      复制图片
+      打开图片
     </span>
   </li>
 
@@ -3294,7 +3487,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  //RightMenusFunction['copyImg'] = (fun) => {fun()}
+  RightMenusFunction['openImg'] = (__link__) => {window.open(`${__link__}`)}
 
 
 
@@ -3323,6 +3516,122 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
+
+  <script>
+const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+volantis.pjax.push(bindToggleButton);
+
+const darkModelListeners={
+  dark:(mediaQueryList )=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "dark";
+    }
+    volantis.dark.method.toggle.start();
+  },
+  light:(mediaQueryList)=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "light";
+    }
+    volantis.dark.method.toggle.start();
+  }
+}
+window.matchMedia('(prefers-color-scheme: dark)').addListener(darkModelListeners.dark)
+window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListeners.light)
+</script>
+
 
 
 
@@ -3623,7 +3932,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <script>
-  let imgs = ["https://bu.dusays.com/2025/03/06/67c99aeb92ade.jpg","https://bu.dusays.com/2025/03/06/67c99af91f17f.jpg","https://bu.dusays.com/2025/03/06/67c99e394a963.jpg","https://bu.dusays.com/2025/03/06/67c99c48db566.jpg","https://bu.dusays.com/2025/03/06/67c99c5368311.jpg","https://bu.dusays.com/2025/03/06/67c99b2317b49.jpg","https://bu.dusays.com/2025/03/06/67c99c4ad86e7.jpg","https://bu.dusays.com/2025/03/06/67c99aec2b3c3.jpg","https://bu.dusays.com/2025/03/06/67c99c5727753.jpg","https://bu.dusays.com/2025/03/06/67c98f9645f6f.jpg","https://bu.dusays.com/2025/03/06/67c99bba8efaf.jpg","https://bu.dusays.com/2025/03/06/67c99b16dc281.jpg","https://bu.dusays.com/2025/03/06/67c99c50bfe01.jpg","https://bu.dusays.com/2025/03/06/67c99ade5e060.jpg","https://bu.dusays.com/2025/03/06/67c99ba4aabbd.jpg","https://bu.dusays.com/2025/03/06/67c99c5308004.jpg","https://bu.dusays.com/2025/03/06/67c99c36e0c1e.jpg","https://bu.dusays.com/2025/03/06/67c99c576672f.jpg","https://bu.dusays.com/2025/03/06/67c99c4bbc4c0.jpg","https://bu.dusays.com/2025/03/06/67c99c5b4c2b9.jpg","https://bu.dusays.com/2025/03/06/67c98f8d1c1f4.jpg","https://bu.dusays.com/2025/03/06/67c99c4aa3c57.jpg","https://bu.dusays.com/2025/03/06/67c99c475d9ee.jpg","https://bu.dusays.com/2025/03/06/67c98f9e6cea0.jpg","https://bu.dusays.com/2025/03/06/67c99c582ef9d.jpg","https://bu.dusays.com/2025/03/06/67c99b9163260.jpg","https://bu.dusays.com/2025/03/06/67c98f9bdd9d6.jpg","https://bu.dusays.com/2025/03/06/67c99b8a0bbe4.jpg","https://bu.dusays.com/2025/03/06/67c99b0b1e559.jpg","https://bu.dusays.com/2025/03/06/67c99b93ba427.jpg","https://bu.dusays.com/2025/03/06/67c98f9067e58.jpg","https://bu.dusays.com/2025/03/06/67c99adc35d3d.jpg","https://bu.dusays.com/2025/03/06/67c98f8bd06ab.jpg","https://bu.dusays.com/2025/03/06/67c99b9d90e0b.jpg","https://bu.dusays.com/2025/03/06/67c99c58e8471.jpg","https://bu.dusays.com/2025/03/06/67c99b8716ccc.jpg","https://bu.dusays.com/2025/03/06/67c98f9089ff3.jpg","https://bu.dusays.com/2025/03/06/67c99ba548c64.jpg","https://bu.dusays.com/2025/03/06/67c98f918110a.jpg","https://bu.dusays.com/2025/03/06/67c99b9587198.jpg","https://bu.dusays.com/2025/03/06/67c99c4633187.jpg","https://bu.dusays.com/2025/03/06/67c99c57de984.jpg","https://bu.dusays.com/2025/03/06/67c99b9153d80.jpg","https://bu.dusays.com/2025/03/06/67c99c5a2c1cb.jpg","https://bu.dusays.com/2025/03/06/67c99ae5cc40e.jpg","https://bu.dusays.com/2025/03/06/67c99c4db9e00.jpg","https://bu.dusays.com/2025/03/06/67c98f94e8f97.jpg","https://bu.dusays.com/2025/03/06/67c98f939486e.jpg","https://bu.dusays.com/2025/03/06/67c99c500a536.jpg","https://bu.dusays.com/2025/03/06/67c99ae4d8ac1.jpg"];
+  let imgs = ["https://bu.dusays.com/2025/03/08/67cbf4619d5fe.jpg","https://bu.dusays.com/2025/03/08/67cbf462cca18.jpg","https://bu.dusays.com/2025/03/08/67cbf476635a1.jpg","https://bu.dusays.com/2025/03/08/67cbf44d642ca.jpg","https://bu.dusays.com/2025/03/08/67cbf447af41d.jpg","https://bu.dusays.com/2025/03/08/67cbf448bf946.jpg","https://bu.dusays.com/2025/03/08/67cbf45328f0b.jpg","https://bu.dusays.com/2025/03/08/67cbf452128aa.jpg","https://bu.dusays.com/2025/03/08/67cbf470a1f96.jpg","https://bu.dusays.com/2025/03/08/67cbf449e0af1.jpg","https://bu.dusays.com/2025/03/08/67cbf44b05daa.jpg","https://bu.dusays.com/2025/03/08/67cbf4753fa86.jpg","https://bu.dusays.com/2025/03/08/67cbf46e4f947.jpg","https://bu.dusays.com/2025/03/08/67cbf45433cac.jpg","https://bu.dusays.com/2025/03/08/67cbf459dd9b3.jpg","https://bu.dusays.com/2025/03/08/67cbf455487d7.jpg","https://bu.dusays.com/2025/03/08/67cbf46669c33.jpg","https://bu.dusays.com/2025/03/08/67cbf44f949e5.jpg","https://bu.dusays.com/2025/03/08/67cbf46f781a7.jpg","https://bu.dusays.com/2025/03/08/67cbf45b29d89.jpg","https://bu.dusays.com/2025/03/08/67cbf46d0c9a4.jpg","https://bu.dusays.com/2025/03/08/67cbf4642ba8b.jpg","https://bu.dusays.com/2025/03/08/67cbf4654f390.jpg","https://bu.dusays.com/2025/03/08/67cbf471c6a61.jpg","https://bu.dusays.com/2025/03/08/67cbf4741a68d.jpg","https://bu.dusays.com/2025/03/08/67cbf46be6636.jpg","https://bu.dusays.com/2025/03/08/67cbf450e25c1.jpg","https://bu.dusays.com/2025/03/08/67cbf45666b4b.jpg","https://bu.dusays.com/2025/03/08/67cbf458a2935.jpg","https://bu.dusays.com/2025/03/08/67cbf44c38f89.jpg","https://bu.dusays.com/2025/03/08/67cbf473060dd.jpg","https://bu.dusays.com/2025/03/08/67cbf46ac8043.jpg","https://bu.dusays.com/2025/03/08/67cbf45c6bae0.jpg","https://bu.dusays.com/2025/03/08/67cbf45d7f72a.jpg","https://bu.dusays.com/2025/03/08/67cbf457952e4.jpg","https://bu.dusays.com/2025/03/08/67cbf44e7894a.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
