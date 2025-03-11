@@ -100,3 +100,13 @@ var binft = function (r) {
     i()
 };
 binft(document.getElementById('binft'));
+
+// 添加打开背景图片的函数
+function openCurrentBgImage() {
+    const bgElement = document.querySelector('.parallax-mirror img');
+    if (bgElement && bgElement.src) {
+        window.open(bgElement.src, '_blank');
+    } else {
+        console.log('未找到背景图片');
+    }
+}
