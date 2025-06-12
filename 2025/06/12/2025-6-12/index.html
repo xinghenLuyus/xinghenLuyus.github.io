@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.xinghenluyus.cn/categories/运维/"/>
+  
+  <link rel="canonical" href="https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -36,19 +36,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Category: 运维 - Luyus' Blog</title>
-  <meta name="keywords" content="blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
+  <title>Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南 - Luyus' Blog</title>
+  <meta name="keywords" content="踩坑日记,blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
   <meta desc name="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me. - Luyus - Luyus' Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Luyus&#39; Blog">
-<meta property="og:url" content="https://blog.xinghenluyus.cn/categories/%E8%BF%90%E7%BB%B4/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南">
+<meta property="og:url" content="https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/index.html">
 <meta property="og:site_name" content="Luyus&#39; Blog">
-<meta property="og:description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventur">
+<meta property="og:description" content="在现代 Web 应用中，缓存是提升系统性能和减少数据库压力的重要手段。在最基本的SSM开发过程中，Springboot可以方便的将缓存和Redis集成，可以十分便捷的用注解开发。 个人情怀让我使用fastjson。升级到fastjson2后，原本的autotype被废除，不管是官方给出的代码示例还是论坛社区，都没有对泛型数据的支持，对于特定需求使用起来很不方便。 泛型：如果你有一个普通 Java">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-06-12T09:06:52.977Z">
+<meta property="article:modified_time" content="2025-06-12T10:01:30.118Z">
 <meta property="article:author" content="Luyus">
-<meta property="article:tag" content="blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
+<meta property="article:tag" content="踩坑日记">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2678,7 +2680,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2754,25 +2756,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/03/30/2025-3-30/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Luyus' Blog">
   </span>
@@ -2781,63 +2767,279 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/03/30/2025-3-30/"  itemprop="url">
-        笔记本电脑扩容并将整个D盘迁移到新硬盘
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        相信小伙伴们在使用电脑时经常会出现电脑的硬盘不够用的情况。特别是C盘或者D盘的爆满，这时候单纯的加装硬盘只会让你凭空多一个盘，还是不能解决C盘或者D盘爆满的问题。
-我的个人情况是C，D盘原本处于同一硬盘中，我利用磁盘迁移工具将整个D盘完美复制到了新的E盘，实现彻底的扩容。
-下载工具DiskCopy对比多个工具，DiskCopy最简单易用，功能也较为完善，还很轻量。
-自行前往相应网站下载，我的...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-06-12T17:06:52+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jun 12, 2025</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Java%E5%90%8E%E7%AB%AF/">Java后端</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Java%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">Java后端</span></a>
+      </span>
     
   </div>
+
+
+          
+        
+          
+            
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-03-30T20:01:57+08:00">2025-03-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url"><span itemprop="name">运维</span></a>
-            </span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>踩坑日记</p></a></div>
+  <span hidden itemprop="keywords">踩坑日记</span>
+
+
           
         
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>在现代 Web 应用中，缓存是提升系统性能和减少数据库压力的重要手段。在最基本的SSM开发过程中，Springboot可以方便的将缓存和Redis集成，可以十分便捷的用注解开发。</p>
+<p>个人情怀让我使用fastjson。升级到fastjson2后，原本的autotype被废除，不管是官方给出的代码示例还是论坛社区，都没有对泛型数据的支持，对于特定需求使用起来很不方便。</p>
+<div class="note info"><p>泛型：如果你有一个普通 Java Bean (FileEntity) ，那么List<FileEntity>, Map&lt;String, Object&gt; 等就是泛型集合</p></div>
+
+<h2 id="1-引入依赖"><a href="#1-引入依赖" class="headerlink" title="1 引入依赖"></a>1 引入依赖</h2><ul>
+<li><strong>Springboot版本采用3.2.3</strong></li>
+</ul>
+<figure class="highlight plaintext"><figcaption><span>pom.xml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;spring-boot-starter-data-redis&lt;/artifactId&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;com.alibaba.fastjson2&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;fastjson2&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;2.0.57&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;com.alibaba.fastjson2&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;fastjson2-extension-spring6&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;2.0.57&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-创建自定义序列器"><a href="#2-创建自定义序列器" class="headerlink" title="2 创建自定义序列器"></a>2 创建自定义序列器</h2><ul>
+<li>自定义 FastJSON2 序列化器（支持泛型）</li>
+</ul>
+<figure class="highlight plaintext"><figcaption><span>FastJsonRedisSerializer.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">package com.example.demo.config;</span><br><span class="line"></span><br><span class="line">import com.alibaba.fastjson2.JSON;</span><br><span class="line">import com.alibaba.fastjson2.JSONReader;</span><br><span class="line">import com.alibaba.fastjson2.TypeReference;</span><br><span class="line">import org.springframework.data.redis.serializer.RedisSerializer;</span><br><span class="line">import org.springframework.data.redis.serializer.SerializationException;</span><br><span class="line"></span><br><span class="line">import java.lang.reflect.Type;</span><br><span class="line"></span><br><span class="line">public class FastJsonRedisSerializer&lt;T&gt; implements RedisSerializer&lt;T&gt; &#123;</span><br><span class="line"></span><br><span class="line">    private static final JSONReader.Filter AUTO_TYPE_FILTER = JSONReader.autoTypeFilter(</span><br><span class="line">            &quot;com.example.demo.entity.&quot;, // 替换为你的实体包名</span><br><span class="line">            &quot;java.util.ArrayList&quot;,</span><br><span class="line">            &quot;java.util.HashMap&quot;</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    private final Type type;</span><br><span class="line"></span><br><span class="line">    public FastJsonRedisSerializer(Type type) &#123;</span><br><span class="line">        this.type = type;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public FastJsonRedisSerializer(Class&lt;T&gt; clazz) &#123;</span><br><span class="line">        this.type = clazz;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public byte[] serialize(T t) throws SerializationException &#123;</span><br><span class="line">        if (t == null) return new byte[0];</span><br><span class="line">        return JSON.toJSONBytes(t, JSON.Feature.WriteClassName);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public T deserialize(byte[] bytes) throws SerializationException &#123;</span><br><span class="line">        if (bytes == null || bytes.length == 0) return null;</span><br><span class="line">        return JSON.parseObject(bytes, type, AUTO_TYPE_FILTER, JSON.Feature.SupportAutoType);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>String 类型专用序列化器</li>
+</ul>
+<figure class="highlight plaintext"><figcaption><span>FastJson2StringRedisSerializer.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">package com.example.demo.config;</span><br><span class="line"></span><br><span class="line">import org.springframework.data.redis.serializer.RedisSerializer;</span><br><span class="line">import org.springframework.data.redis.serializer.SerializationException;</span><br><span class="line"></span><br><span class="line">import java.nio.charset.StandardCharsets;</span><br><span class="line"></span><br><span class="line">public class FastJson2StringRedisSerializer implements RedisSerializer&lt;String&gt; &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public byte[] serialize(String s) throws SerializationException &#123;</span><br><span class="line">        return s == null ? new byte[0] : s.getBytes(StandardCharsets.UTF_8);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public String deserialize(byte[] bytes) throws SerializationException &#123;</span><br><span class="line">        return bytes == null || bytes.length == 0 ? null : new String(bytes, StandardCharsets.UTF_8);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-配置Config"><a href="#3-配置Config" class="headerlink" title="3 配置Config"></a>3 配置Config</h2><ul>
+<li>配置 RedisTemplate</li>
+</ul>
+<figure class="highlight plaintext"><figcaption><span>RedisConfig.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">package com.example.demo.config;</span><br><span class="line"></span><br><span class="line">import org.springframework.context.annotation.Bean;</span><br><span class="line">import org.springframework.context.annotation.Configuration;</span><br><span class="line">import org.springframework.data.redis.connection.RedisConnectionFactory;</span><br><span class="line">import org.springframework.data.redis.core.RedisTemplate;</span><br><span class="line">import org.springframework.data.redis.serializer.StringRedisSerializer;</span><br><span class="line"></span><br><span class="line">@Configuration</span><br><span class="line">public class RedisConfig &#123;</span><br><span class="line"></span><br><span class="line">    @Bean</span><br><span class="line">    public RedisTemplate&lt;Object, Object&gt; redisTemplate(RedisConnectionFactory factory) &#123;</span><br><span class="line">        RedisTemplate&lt;Object, Object&gt; template = new RedisTemplate&lt;&gt;();</span><br><span class="line">        template.setConnectionFactory(factory);</span><br><span class="line"></span><br><span class="line">        FastJsonRedisSerializer&lt;Object&gt; valueSerializer = new FastJsonRedisSerializer&lt;&gt;(Object.class);</span><br><span class="line">        FastJson2StringRedisSerializer stringSerializer = new FastJson2StringRedisSerializer();</span><br><span class="line"></span><br><span class="line">        template.setKeySerializer(stringSerializer);             // key: String</span><br><span class="line">        template.setHashKeySerializer(stringSerializer);         // hashKey: String</span><br><span class="line">        template.setValueSerializer(valueSerializer);            // value: 泛型对象</span><br><span class="line">        template.setHashValueSerializer(valueSerializer);        // hashValue: 泛型对象</span><br><span class="line">        template.setDefaultSerializer(valueSerializer);</span><br><span class="line">        template.setStringSerializer(stringSerializer);</span><br><span class="line">        template.afterPropertiesSet();</span><br><span class="line"></span><br><span class="line">        return template;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>配置 RedisCacheManager（用于 @Cacheable 等注解）</li>
+</ul>
+<figure class="highlight plaintext"><figcaption><span>RedisCacheConfig.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">package com.example.demo.config;</span><br><span class="line"></span><br><span class="line">import org.springframework.cache.annotation.EnableCaching;</span><br><span class="line">import org.springframework.context.annotation.Bean;</span><br><span class="line">import org.springframework.context.annotation.Configuration;</span><br><span class="line">import org.springframework.data.redis.cache.RedisCacheConfiguration;</span><br><span class="line">import org.springframework.data.redis.cache.RedisCacheManager;</span><br><span class="line">import org.springframework.data.redis.connection.RedisConnectionFactory;</span><br><span class="line">import org.springframework.data.redis.serializer.RedisSerializationContext;</span><br><span class="line"></span><br><span class="line">import java.time.Duration;</span><br><span class="line"></span><br><span class="line">@Configuration</span><br><span class="line">@EnableCaching</span><br><span class="line">public class RedisCacheConfig &#123;</span><br><span class="line"></span><br><span class="line">    @Bean</span><br><span class="line">    public RedisCacheManager redisCacheManager(RedisConnectionFactory factory) &#123;</span><br><span class="line">        FastJsonRedisSerializer&lt;Object&gt; serializer = new FastJsonRedisSerializer&lt;&gt;(Object.class);</span><br><span class="line"></span><br><span class="line">        RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig()</span><br><span class="line">                .serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(serializer))</span><br><span class="line">                .entryTtl(Duration.ofMinutes(30)); // 设置缓存过期时间</span><br><span class="line"></span><br><span class="line">        return RedisCacheManager.builder(factory)</span><br><span class="line">                .cacheDefaults(config)</span><br><span class="line">                .build();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>到此配置全部完毕</strong></p>
+<h2 id="4-Spring-Cache-注解详解与使用示例"><a href="#4-Spring-Cache-注解详解与使用示例" class="headerlink" title="4 Spring Cache 注解详解与使用示例"></a>4 Spring Cache 注解详解与使用示例</h2><h3 id="4-1-Cacheable"><a href="#4-1-Cacheable" class="headerlink" title="4.1 @Cacheable"></a>4.1 @Cacheable</h3><p><strong>用途</strong>：标记方法返回值需被缓存。若缓存存在，则直接返回；否则执行方法体并缓存结果。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Cacheable(value = &quot;fileCache&quot;, key = &quot;#id&quot;)</span></span><br><span class="line">FileEntity <span class="title function_">getFileById</span><span class="params">(UUID id)</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-CachePut"><a href="#4-2-CachePut" class="headerlink" title="4.2 @CachePut"></a>4.2 @CachePut</h3><p><strong>用途</strong>：更新缓存，总是执行方法并将结果写入缓存。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@CachePut(value = &quot;fileCache&quot;, key = &quot;#result.id&quot;)</span></span><br><span class="line">FileEntity <span class="title function_">saveFile</span><span class="params">(FileEntity file)</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-CacheEvict"><a href="#4-3-CacheEvict" class="headerlink" title="4.3 @CacheEvict"></a>4.3 @CacheEvict</h3><p><strong>用途</strong>：清除缓存中的条目。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@CacheEvict(value = &quot;fileCache&quot;, key = &quot;#id&quot;)</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">deleteFile</span><span class="params">(UUID id)</span>;</span><br></pre></td></tr></table></figure>
+
+<p>清空整个缓存区域：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@CacheEvict(value = &quot;fileListCache&quot;, allEntries = true)</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">clearAllFiles</span><span class="params">()</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-4-CacheConfig"><a href="#4-4-CacheConfig" class="headerlink" title="4.4 @CacheConfig"></a>4.4 @CacheConfig</h3><p><strong>用途</strong>：类级别共享缓存配置</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@CacheConfig(cacheNames = &quot;fileCache&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">FileService</span> &#123;</span><br><span class="line">    <span class="meta">@Cacheable(key = &quot;#id&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> FileEntity <span class="title function_">getFileById</span><span class="params">(UUID id)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> fileMapper.selectById(id);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-5-业务层使用示例"><a href="#4-5-业务层使用示例" class="headerlink" title="4.5 业务层使用示例"></a>4.5 业务层使用示例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">FileService</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> FileRepository fileRepository;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Cacheable(value = &quot;fileCache&quot;, key = &quot;#id&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> FileEntity <span class="title function_">getFileById</span><span class="params">(UUID id)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> fileRepository.selectById(id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@CachePut(value = &quot;fileCache&quot;, key = &quot;#result.id&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> FileEntity <span class="title function_">saveFile</span><span class="params">(FileEntity file)</span> &#123;</span><br><span class="line">        fileRepository.insert(file);</span><br><span class="line">        <span class="keyword">return</span> file;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@CacheEvict(value = &quot;fileCache&quot;, key = &quot;#id&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">deleteFile</span><span class="params">(UUID id)</span> &#123;</span><br><span class="line">        fileRepository.deleteById(id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Cacheable(value = &quot;fileListCache&quot;, key = &quot;&#x27;all&#x27;&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;FileEntity&gt; <span class="title function_">getAllFiles</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> fileRepository.selectAll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-06-12T18:01:30+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jun 12, 2025</p>
+  </a>
 </div>
 
-          </div>
         
       
+        
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>1.1k words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>5 min</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-  </section>
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/&title=Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南 - Luyus' Blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC70lEQVR42u3aQXLcMAwEwP3/p5MHJKkFBthE2DRvtiWZbF6mALx+WL9dLwRgwIABAwbMGZhXuH754B/+Xn0//d6797rnAQMGDBgwYMDcgykHoDcbSjc4hdo6DxgwYMCAAQPmLszbAFTcSDcYpsDpBYEBAwYMGDBgwEwPnga1dH9gwIABAwYMGDBpYWgaDKcXBwYMGDBgwID5Xph2g2rpAClk+hwYMGDAgAED5ntg4oHhh/4cnwcMGDBgwIABcwZmuqoBr/ped/Boe4EBAwYMGDBg7sCkAakLVh0EqjbkPrV/MGDAgAEDBsz3wXSDXffAXdjt34MBAwYMGDBg7sGkG0kDWDrgsz3oVK7ggQEDBgwYMGAeD7O1oW24ajBLC1dgwIABAwYMmPsw08LTNMilBa30osCAAQMGDBgw92G2D94NZtsD1OP/CwYMGDBgwID5OpjqhqsFoukBPtYIBAMGDBgwYMB8HUwVYhrEtqDTwhkYMGDAgAED5g5MOtCTwm4NFHXhy98DAwYMGDBgwJyHSYNbt5A0bbilgfJtww0MGDBgwIAB83iY6YarwWxrsKjbeGvvDwwYMGDAgAFzDiYNeltBsAvTfa58EWDAgAEDBgyYMzDTgNQNdNMBper/jb8LBgwYMGDAgDkD022cTRtvaaCbBrnyoBMYMGDAgAED5hzMVoOsW4Cavte9kLdwYMCAAQMGDJjzMClYGtC6F5LCxYNDYMCAAQMGDJjHw3Q3Oh30SfexfUFgwIABAwYMmHsw0zUdDNoKgmmhCgwYMGDAgAFzF+YVrq3gtd04Wy9UgQEDBgwYMGAeD9MNdGlBafpc9aK6QREMGDBgwIABcx9m2iirFrK6QW17gAkMGDBgwIABAyYdHPpUYy6FAwMGDBgwYMD8vzDV99IDTgNjuRAHBgwYMGDAgDkL0224dZ/rAqSNs38+OAQGDBgwYMCA+WswaeNq2jDbApt+BwwYMGDAgAFzD8YCAwYMGDBgwBxbPwHnWeMsUiqHMgAAAABJRU5ErkJggg==">
+          </div>
+        </div>
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/&text=Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南 - Luyus' Blog"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
-    
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/03/30/2025-3-30/'>
+          <p class='title'>笔记本电脑扩容并将整个D盘迁移到新硬盘<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>相信小伙伴们在使用电脑时经常会出现电脑的硬盘不够用的情况。特别是C盘或者D盘的爆满，这时候单纯的加装硬盘只会让你凭空多一个盘，还是不能解决C盘或者D盘爆满的问题。
+我的个人情况是C，D盘原本处于...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2025/06/12/2025-6-12/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2909,145 +3111,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java%E5%90%8E%E7%AB%AF/" href="/categories/Java%E5%90%8E%E7%AB%AF/"
-            active-action="action-categoriesJavaE5908EE7ABAF"
-            ><div class='name'>Java后端</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/"
-            active-action="action-categoriesE7BC96E7A88BE4B98BE5A496"
-            ><div class='name'>编程之外</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"
-            active-action="action-categoriesE8AEA1E7AE97E69CBAE7BD91E7BB9C"
-            ><div class='name'>计算机网络</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/"
-            active-action="action-categoriesE8BDAFE4BBB6E4B88BE8BDBD"
-            ><div class='name'>软件下载</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BF%90%E7%BB%B4/" href="/categories/%E8%BF%90%E7%BB%B4/"
-            active-action="action-categoriesE8BF90E7BBB4"
-            ><div class='name'>运维</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/%E5%85%89%E7%8C%AB/" style="font-size: 14px; color: #999">光猫</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 14px; color: #999">教程</a> <a href="/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" style="font-size: 14px; color: #999">磁盘管理</a> <a href="/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" style="font-size: 24px; color: #555">踩坑日记</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>5 篇</div>
-        </div>
-      
-
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>10k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="busuanzi_value_site_uv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="busuanzi_value_site_pv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2025-06-12 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BC%95%E5%85%A5%E4%BE%9D%E8%B5%96"><span class="toc-text">1 引入依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%8F%E5%88%97%E5%99%A8"><span class="toc-text">2 创建自定义序列器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%85%8D%E7%BD%AEConfig"><span class="toc-text">3 配置Config</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Spring-Cache-%E6%B3%A8%E8%A7%A3%E8%AF%A6%E8%A7%A3%E4%B8%8E%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="toc-text">4 Spring Cache 注解详解与使用示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-Cacheable"><span class="toc-text">4.1 @Cacheable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-CachePut"><span class="toc-text">4.2 @CachePut</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-CacheEvict"><span class="toc-text">4.3 @CacheEvict</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-CacheConfig"><span class="toc-text">4.4 @CacheConfig</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-%E4%B8%9A%E5%8A%A1%E5%B1%82%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="toc-text">4.5 业务层使用示例</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3071,13 +3176,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4116,7 +4222,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.xinghenluyus.cn/","name":"Luyus' Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.xinghenluyus.cn/categories/运维/","name":"运维"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.xinghenluyus.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/"},"publisher":{"@type":"Organization","name":"Luyus' Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.xinghenluyus.cn/","name":"Luyus' Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.xinghenluyus.cn/categories/Java后端/","name":"Java后端"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/","name":"Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.xinghenluyus.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/"},"publisher":{"@type":"Organization","name":"Luyus' Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/","wordCount":0,"datePublished":"2025-06-12T09:06:52.977Z","dateModified":"2025-06-12T10:01:30.118Z","articleSection":"Java后端","keywords":"踩坑日记","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
