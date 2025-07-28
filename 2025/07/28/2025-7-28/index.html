@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.xinghenluyus.cn/archives/2025/06/"/>
+  
+  <link rel="canonical" href="https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -36,19 +36,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2025/6 - Luyus' Blog</title>
-  <meta name="keywords" content="blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
+  <title>解决huggingface.co无法访问 - Luyus' Blog</title>
+  <meta name="keywords" content="踩坑日记,blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
   <meta desc name="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me. - Luyus - Luyus' Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Luyus&#39; Blog">
-<meta property="og:url" content="https://blog.xinghenluyus.cn/archives/2025/06/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决huggingface.co无法访问">
+<meta property="og:url" content="https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/index.html">
 <meta property="og:site_name" content="Luyus&#39; Blog">
-<meta property="og:description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventur">
+<meta property="og:description" content="将huggingface.co换成镜像源hf-mirror.com即可解决问题。 1解决方法：export HF_ENDPOINT&#x3D;https:&#x2F;&#x2F;hf-mirror.com （可以写入到~&#x2F;.bashrc中，长久可用）  windows可以创建名为HF_ENDPOINT的系统环境变量，值为https:&#x2F;&#x2F;hf-mirror.com。 参考内容如下，如果环境中有HF_ENDPOINT的设定就会采用">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-07-28T09:43:06.152Z">
+<meta property="article:modified_time" content="2025-07-28T09:50:54.794Z">
 <meta property="article:author" content="Luyus">
-<meta property="article:tag" content="blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
+<meta property="article:tag" content="踩坑日记">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2409,7 +2411,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2678,7 +2680,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2755,24 +2757,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/06/27/2025-6-27/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Luyus' Blog">
   </span>
@@ -2781,122 +2767,241 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/06/27/2025-6-27/"  itemprop="url">
-        SakuraFrp隧道开启https，使用个人域名并配置SSL
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        官方配置文档传送门https://doc.natfrp.com/frpc/ssl.html
+    
+      <h1 class="title" itemprop="name headline">
+        解决huggingface.co无法访问
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-07-28T17:43:06+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jul 28, 2025</p>
+  </a>
+</div>
 
-我是在项目开发的过程中暂时暴露后端服务与前端通信时遇到的问题。浏览器限制要求必须使用https协议，然而Sakura自带的自签名证书会报错，甚至导致部分服务无法使用。一气之下决定彻底解决这个问题。
-1 准备工作首先，你要拥有一个自己的域名。我的域名都是腾讯云的。SSL证书的注册要求是你自己的域名。
-...
-      
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url"><span itemprop="name">计算机网络</span></a>
+      </span>
     
   </div>
+
+
+          
+        
+          
+            
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-06-27T20:10:17+08:00">2025-06-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url"><span itemprop="name">计算机网络</span></a>
-            </span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>踩坑日记</p></a></div>
+  <span hidden itemprop="keywords">踩坑日记</span>
+
+
           
         
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>将huggingface.co换成镜像源hf-mirror.com即可解决问题。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">解决方法：export HF_ENDPOINT=https://hf-mirror.com （可以写入到~/.bashrc中，长久可用）</span><br></pre></td></tr></table></figure>
+
+<p>windows可以创建名为<code>HF_ENDPOINT</code>的系统环境变量，值为<code>https://hf-mirror.com</code>。</p>
+<p>参考内容如下，如果环境中有HF_ENDPOINT的设定就会采用该设定作为前缀，即上面镜像的<a target="_blank" rel="noopener" href="https://hf-mirror.com而非默认的https//huggingface.co%E3%80%82">https://hf-mirror.com而非默认的https://huggingface.co。</a></p>
+<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://bu.dusays.com/2025/07/28/688746b6e3028.png" class="lazyload" data-srcset="https://bu.dusays.com/2025/07/28/688746b6e3028.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="/path/to/env/site-packages/huggingface_hub/constants.py"/></div><span class="image-caption">/path/to/env/site-packages/huggingface_hub/constants.py</span></div>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-07-28T17:50:54+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jul 28, 2025</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus' Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus' Blog">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>110 words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>1 min</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/&title=解决huggingface.co无法访问 - Luyus' Blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADAklEQVR42u3awXHDMAwEQPffdNJAMgKOkEewlz/HMUWuPjcAXj/Wn+uFAAwYMGDAgFkD8wrX1e+r3/97wOJ+V79r3wcMGDBgwIABsw6mHIDCi3cvUn1e9Tnl+4ABAwYMGDBg1sJ0D5oGuer31edN3QcMGDBgwIAB8z0wVbgq7CkcGDBgwIABAwZMGvDSC58WqMCAAQMGDBgwYLoNqvGGV7Oh1g2Gb+tEggEDBgwYMGDeBnM6AP20z4+ZDAcDBgwYMGDA3AZzuqYDXbcg1X3+5fnAgAEDBgwYMGtgqoWiatCrHrQL0t03LYiBAQMGDBgwYD4PJr1Y2hBLX0T6dzBgwIABAwbMXpg0GE0PSqcNtC4sGDBgwIABA2Y/TBr0pgZ4uvt2A2A7WIIBAwYMGDBg1sB0N5w6QAqS7lsGBwMGDBgwYMCsgUkLSFODQGljbBoKDBgwYMCAAfM5MN0CURdwOpiNvWAwYMCAAQMGzBqYbuOs2vA6beilL6Tb0AMDBgwYMGDA7IdJC0vd76cCZFrgAgMGDBgwYMB8Dsx0Qel0YDkdpO7u+y8cGDBgwIABA2YNTDeQVQ+SDhalBbHT84EBAwYMGDBg9sFMHeh0gKcbKNMAd7k/GDBgwIABA2YtzOlgTrWglTbKbg+KYMCAAQMGDJg1MOnFTxtj6QVOX9zl88GAAQMGDBgwa2CmB3xOC0rdhtpp4w0MGDBgwIABsx+me5HTQelucEwHk7rnBgMGDBgwYMDsgUkvlhaSpgCmCmSXFTwwYMCAAQMGzGNhTle3wZUOEp0GxjI8GDBgwIABA2YNzCtc3SCWBrTp4AgGDBgwYMCA+TyYbqBLHzy1XxrwLv8fDBgwYMCAAbMWZirQVT/fFfjiRh8YMGDAgAED5mtgugdLg2XaCGy/UDBgwIABAwbM18OcBrbTQaUqzG2FKjBgwIABAwbM22G6wWm68ZYWvLovoh3wwIABAwYMGDCPhbmtgdUMft0Xcgp7GfDAgAEDBgwYMI+FscCAAQMGDBgwy9YvtDfkHRLFTwEAAAAASUVORK5CYII=">
+          </div>
+        </div>
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/&text=解决huggingface.co无法访问 - Luyus' Blog"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/06/27/2025-6-27/'>
+          <p class='title'>SakuraFrp隧道开启https，使用个人域名并配置SSL<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>官方配置文档传送门https://doc.natfrp.com/frpc/ssl.html
+
+我是在项目开发的过程中暂时暴露后端服务与前端通信时遇到的问题。浏览器限制要求必须使用https协议，...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2025/07/28/2025-7-28/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/06/12/2025-6-12/"  itemprop="url">
-        Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        在现代 Web 应用中，缓存是提升系统性能和减少数据库压力的重要手段。在最基本的SSM开发过程中，Springboot可以方便的将缓存和Redis集成，可以十分便捷的用注解开发。
-个人情怀让我使用fastjson。升级到fastjson2后，原本的autotype被废除，不管是官方给出的代码示例还是论坛社区，都没有对泛型数据的支持，对于特定需求使用起来很不方便。
-泛型：如果你有一个普通 Ja...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-06-12T17:06:52+08:00">2025-06-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java%E5%90%8E%E7%AB%AF/">Java后端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Java%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">Java后端</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2968,145 +3073,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java%E5%90%8E%E7%AB%AF/" href="/categories/Java%E5%90%8E%E7%AB%AF/"
-            active-action="action-categoriesJavaE5908EE7ABAF"
-            ><div class='name'>Java后端</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/"
-            active-action="action-categoriesE7BC96E7A88BE4B98BE5A496"
-            ><div class='name'>编程之外</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"
-            active-action="action-categoriesE8AEA1E7AE97E69CBAE7BD91E7BB9C"
-            ><div class='name'>计算机网络</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/"
-            active-action="action-categoriesE8BDAFE4BBB6E4B88BE8BDBD"
-            ><div class='name'>软件下载</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BF%90%E7%BB%B4/" href="/categories/%E8%BF%90%E7%BB%B4/"
-            active-action="action-categoriesE8BF90E7BBB4"
-            ><div class='name'>运维</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/%E5%85%89%E7%8C%AB/" style="font-size: 14px; color: #999">光猫</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 14px; color: #999">教程</a> <a href="/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" style="font-size: 14px; color: #999">磁盘管理</a> <a href="/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" style="font-size: 24px; color: #555">踩坑日记</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>7 篇</div>
-        </div>
-      
-
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>10.9k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="busuanzi_value_site_uv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="busuanzi_value_site_pv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2025-07-28 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3130,13 +3128,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3145,14 +3144,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4175,7 +4174,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.xinghenluyus.cn/","name":"Luyus' Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.xinghenluyus.cn/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.xinghenluyus.cn/archives/2025/","name":"2025"}},{"@type":"ListItem","position":4,"item":{"@id":"https://blog.xinghenluyus.cn/archives/2025/6/","name":"6"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.xinghenluyus.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/"},"publisher":{"@type":"Organization","name":"Luyus' Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.xinghenluyus.cn/","name":"Luyus' Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.xinghenluyus.cn/categories/计算机网络/","name":"计算机网络"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/","name":"解决huggingface.co无法访问"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus' Blog","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.xinghenluyus.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"解决huggingface.co无法访问","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/"},"publisher":{"@type":"Organization","name":"Luyus' Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/","wordCount":0,"datePublished":"2025-07-28T09:43:06.152Z","dateModified":"2025-07-28T09:50:54.794Z","articleSection":"计算机网络","keywords":"踩坑日记","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
