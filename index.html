@@ -1974,7 +1974,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1756367247155),
+    lastupdate: new Date(1760532821016),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo"],
       for_post: ["blogger","toc"],
@@ -2793,9 +2793,73 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/10/15/2025-10-15/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Luyus的个人站点">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Luyus的个人站点">
+    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/10/15/2025-10-15/"  itemprop="url">
+        在腾讯轻量应用服务器部署gitea和runner
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        gitea真的是太轻量好用啦！
+1 安装gitea1.1 准备工作
+拥有一台服务器，并且拥有公网ip
+
+我这里是采用了腾讯云的轻量应用云服务器，使用的Ubuntu并安装好了docker。这里采用docker部署。
+1.2 创建目录与权限bash12mkdir -p /srv/gitea/&#123;data,config,logs&#125;chown -R 1000:1000 /srv/g...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-10-15T00:00:00+08:00">2025-10-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/">编程之外</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" itemprop="url"><span itemprop="name">编程之外</span></a>
+            </span>
+          
+        
+      </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3346,68 +3410,24 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/03/10/2025-3-10/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/03/10/2025-3-10/"  itemprop="url">
-        从零搭建个人博客（基于Hexo，使用Volantis主题，部署在github并上传cdn）
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        这是我的第一篇博客，也是本站的部署记录。
-1 前言相信每一个想部署个人博客的小伙伴们都想快速上手个人博客。在众多框架中，hexo以庞大的使用群体胜出，成为了我的选择。而Volantis主题又以清新脱俗的小众化吸引了我的注意。
-在网站的部署上，我选择部署在GitHub pages（毕竟谁不喜欢有稳定又白能嫖的渠道呢）。碍于国内访问速度过慢，我将网站上传CDN提升国内访问速度，并使用了自己的域名...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-03-10T00:00:00+08:00">2025-03-10</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/">编程之外</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" itemprop="url"><span itemprop="name">编程之外</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
+    
+      <br>
+      <div class="prev-next">
+        
+        <p class="current">
+          1 / 2
+        </p>
+        
+          <a class="next" rel="next" href="/page/2/">
+            <section class="post next white-box shadow blur">
+              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </section>
+          </a>
+        
+      </div>
     
   
 
@@ -3509,7 +3529,7 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
           <li><a class="flat-box"
             title="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/"
             active-action="action-categoriesE7BC96E7A88BE4B98BE5A496"
-            ><div class='name'>编程之外</div><div class='badge'>(2)</div></a></li>
+            ><div class='name'>编程之外</div><div class='badge'>(3)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"
@@ -3549,7 +3569,7 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
 
 
     <div class='content'>
-      <a href="/tags/%E5%85%89%E7%8C%AB/" style="font-size: 14px; color: #999">光猫</a> <a href="/tags/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/" style="font-size: 14px; color: #999">异地组网</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 19px; color: #777">教程</a> <a href="/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" style="font-size: 14px; color: #999">磁盘管理</a> <a href="/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" style="font-size: 24px; color: #555">踩坑日记</a>
+      <a href="/tags/%E5%85%89%E7%8C%AB/" style="font-size: 14px; color: #999">光猫</a> <a href="/tags/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/" style="font-size: 14px; color: #999">异地组网</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" style="font-size: 14px; color: #999">磁盘管理</a> <a href="/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" style="font-size: 24px; color: #555">踩坑日记</a>
     </div>
   </section>
 
@@ -3575,7 +3595,7 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>10 篇</div>
+          <div>11 篇</div>
         </div>
       
 
@@ -3585,7 +3605,7 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>14.8k 字</div>
+          <div>15.6k 字</div>
         </div>
       
 
@@ -3610,7 +3630,7 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2025-08-28 日</div>
+          <div id="last-update-show">2025-10-15 日</div>
         </div>
       
     </div>
@@ -4513,7 +4533,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://bu.dusays.com/2025/03/08/67cbf44e7894a.jpg","https://bu.dusays.com/2025/03/08/67cbf457952e4.jpg","https://bu.dusays.com/2025/03/08/67cbf44c38f89.jpg","https://bu.dusays.com/2025/03/08/67cbf45c6bae0.jpg","https://bu.dusays.com/2025/03/08/67cbf44b05daa.jpg","https://bu.dusays.com/2025/03/08/67cbf447af41d.jpg","https://bu.dusays.com/2025/03/08/67cbf4642ba8b.jpg","https://bu.dusays.com/2025/03/08/67cbf471c6a61.jpg","https://bu.dusays.com/2025/03/08/67cbf46e4f947.jpg","https://bu.dusays.com/2025/03/08/67cbf4741a68d.jpg","https://bu.dusays.com/2025/03/08/67cbf46d0c9a4.jpg","https://bu.dusays.com/2025/03/08/67cbf4654f390.jpg","https://bu.dusays.com/2025/03/08/67cbf44d642ca.jpg","https://bu.dusays.com/2025/03/08/67cbf448bf946.jpg","https://bu.dusays.com/2025/03/08/67cbf458a2935.jpg","https://bu.dusays.com/2025/03/08/67cbf45d7f72a.jpg","https://bu.dusays.com/2025/03/08/67cbf450e25c1.jpg","https://bu.dusays.com/2025/03/08/67cbf4619d5fe.jpg","https://bu.dusays.com/2025/03/08/67cbf452128aa.jpg","https://bu.dusays.com/2025/03/08/67cbf476635a1.jpg","https://bu.dusays.com/2025/03/08/67cbf45328f0b.jpg","https://bu.dusays.com/2025/03/08/67cbf44f949e5.jpg","https://bu.dusays.com/2025/03/08/67cbf45433cac.jpg","https://bu.dusays.com/2025/03/08/67cbf45666b4b.jpg","https://bu.dusays.com/2025/03/08/67cbf449e0af1.jpg"];
+  let imgs = ["https://bu.dusays.com/2025/03/08/67cbf45666b4b.jpg","https://bu.dusays.com/2025/03/08/67cbf44c38f89.jpg","https://bu.dusays.com/2025/03/08/67cbf46e4f947.jpg","https://bu.dusays.com/2025/03/08/67cbf449e0af1.jpg","https://bu.dusays.com/2025/03/08/67cbf4654f390.jpg","https://bu.dusays.com/2025/03/08/67cbf476635a1.jpg","https://bu.dusays.com/2025/03/08/67cbf44f949e5.jpg","https://bu.dusays.com/2025/03/08/67cbf4741a68d.jpg","https://bu.dusays.com/2025/03/08/67cbf45d7f72a.jpg","https://bu.dusays.com/2025/03/08/67cbf450e25c1.jpg","https://bu.dusays.com/2025/03/08/67cbf44d642ca.jpg","https://bu.dusays.com/2025/03/08/67cbf4619d5fe.jpg","https://bu.dusays.com/2025/03/08/67cbf452128aa.jpg","https://bu.dusays.com/2025/03/08/67cbf45433cac.jpg","https://bu.dusays.com/2025/03/08/67cbf44e7894a.jpg","https://bu.dusays.com/2025/03/08/67cbf44b05daa.jpg","https://bu.dusays.com/2025/03/08/67cbf471c6a61.jpg","https://bu.dusays.com/2025/03/08/67cbf447af41d.jpg","https://bu.dusays.com/2025/03/08/67cbf45328f0b.jpg","https://bu.dusays.com/2025/03/08/67cbf4642ba8b.jpg","https://bu.dusays.com/2025/03/08/67cbf448bf946.jpg","https://bu.dusays.com/2025/03/08/67cbf457952e4.jpg","https://bu.dusays.com/2025/03/08/67cbf46d0c9a4.jpg","https://bu.dusays.com/2025/03/08/67cbf458a2935.jpg","https://bu.dusays.com/2025/03/08/67cbf45c6bae0.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
