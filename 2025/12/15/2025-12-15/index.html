@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.xinghenluyus.cn/archives/2025/"/>
+  
+  <link rel="canonical" href="https://blog.xinghenluyus.cn/2025/12/15/2025-12-15/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -36,19 +36,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2025 - Luyus的个人站点</title>
-  <meta name="keywords" content="blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
+  <title>Wireguard 在 Windows 中的亿点点细节 - Luyus的个人站点</title>
+  <meta name="keywords" content="Wireguard,blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
   <meta desc name="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me. - Luyus - Luyus的个人站点">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Luyus的个人站点">
-<meta property="og:url" content="https://blog.xinghenluyus.cn/archives/2025/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wireguard 在 Windows 中的亿点点细节">
+<meta property="og:url" content="https://blog.xinghenluyus.cn/2025/12/15/2025-12-15/index.html">
 <meta property="og:site_name" content="Luyus的个人站点">
-<meta property="og:description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventur">
+<meta property="og:description" content="1 Windows 杂谈作为使用人数最多，覆盖最广的操作系统，是组网绕不开的。且不说60%的开发者使都使用Windows开发程序，很多的游戏，剪辑软件，显卡驱动都更加贴合Windows。 Linux以简洁的命令，清晰的架构，快捷的程序安装，成为了无数服务喜爱的温床。Wireguard在Linux中可以被方便的部署，配置。 多年使用Wireguard的我总结了多项Wireguard在Windows中">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-12-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-12-15T03:49:51.338Z">
 <meta property="article:author" content="Luyus">
-<meta property="article:tag" content="blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
+<meta property="article:tag" content="Wireguard">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2409,7 +2411,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2678,7 +2680,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2755,39 +2757,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/12/15/2025-12-15/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Luyus的个人站点">
@@ -2797,637 +2767,281 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/12/15/2025-12-15/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         Wireguard 在 Windows 中的亿点点细节
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-12-15T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Dec 15, 2025</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
     
-      
-        1 Windows 杂谈作为使用人数最多，覆盖最广的操作系统，是组网绕不开的。且不说60%的开发者使都使用Windows开发程序，很多的游戏，剪辑软件，显卡驱动都更加贴合Windows。
-Linux以简洁的命令，清晰的架构，快捷的程序安装，成为了无数服务喜爱的温床。Wireguard在Linux中可以被方便的部署，配置。
-多年使用Wireguard的我总结了多项Wireguard在Windo...
-      
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url"><span itemprop="name">计算机网络</span></a>
+      </span>
     
   </div>
+
+
+          
+        
+          
+            
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-12-15T00:00:00+08:00">2025-12-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url"><span itemprop="name">计算机网络</span></a>
-            </span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Wireguard/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Wireguard</p></a></div>
+  <span hidden itemprop="keywords">Wireguard</span>
+
+
           
         
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="1-Windows-杂谈"><a href="#1-Windows-杂谈" class="headerlink" title="1 Windows 杂谈"></a>1 Windows 杂谈</h2><p>作为使用人数最多，覆盖最广的操作系统，是组网绕不开的。且不说60%的开发者使都使用Windows开发程序，很多的游戏，剪辑软件，显卡驱动都更加贴合Windows。</p>
+<p>Linux以简洁的命令，清晰的架构，快捷的程序安装，成为了无数服务喜爱的温床。Wireguard在Linux中可以被方便的部署，配置。</p>
+<p>多年使用Wireguard的我总结了多项Wireguard在Windows中的痛点，有了我的解决方案。</p>
+<h2 id="2-命令行操作"><a href="#2-命令行操作" class="headerlink" title="2 命令行操作"></a>2 命令行操作</h2><p>正常来看，Windows只能通过UI界面对接口进行操作，UI关闭后网络接口将会被关闭。所有配置的导入，修改，都依赖UI (ssh噩梦)。</p>
+<p>不同于Linux有<code>wg-quick</code>接口控制工具，Windows只保留了最原始wg工具。但少有人知道，<code>wireguard.exe</code>本身不止是一个UI，还是一个命令行工具。</p>
+<p><img src="https://bu.dusays.com/2025/12/15/693f7b9240832.png" class="lazyload" data-srcset="https://bu.dusays.com/2025/12/15/693f7b9240832.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>将Wireguard目录添加系统环境变量(默认安装时已经添加)，然后彻底关闭UI页面(再见了UI)。</p>
+<ul>
+<li>安装新接口作为系统服务(后台安装，不会开启UI接口，类似与<code>wg-quick</code>，且重启不会丢失)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wireguard.exe /installtunnelservice <span class="string">&quot;%CONF_PATH%&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>卸载同理</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wireguard.exe /uninstalltunnelservice <span class="string">&quot;%WG_INTERFACE%&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>wg 工具和 Linux 一样，包括 <code>wg show</code> 和 <code>wg sync</code> ，这里不再赘述。</li>
+</ul>
+<h2 id="3-IP转发"><a href="#3-IP转发" class="headerlink" title="3 IP转发"></a>3 IP转发</h2><p>两者类似，但是要注意Windows要在powershell运行命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Linux</span></span><br><span class="line">sysctl -w net.ipv4.ip_forward=1</span><br><span class="line"></span><br><span class="line"><span class="comment"># Windows</span></span><br><span class="line">Get-NetIPInterface</span><br><span class="line">Set-NetIPInterface -Forwarding Enabled</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-跨接口转发"><a href="#4-跨接口转发" class="headerlink" title="4 跨接口转发"></a>4 跨接口转发</h2><ul>
+<li>将Windows下Wireguard网络接口级别设置为<code>Private</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-NetConnectionProfile -InterfaceAlias <span class="string">&quot;%WG_INTERFACE%&quot;</span> -NetworkCategory Private</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启用NAT转发Wireguard流量到别的接口</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Linux</span></span><br><span class="line">New-NetNat -Name <span class="string">&quot;WG-NAT&quot;</span> -InternalIPInterfaceAddressPrefix %WG_ALL_IPS%</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>等价于以下Linux命令</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -t nat -A POSTROUTING -s %WG_ALL_IPS% -o eth0 -j MASQUERADE</span><br></pre></td></tr></table></figure>
+
+<span class='p center h1 black'>欢迎查看我的项目 fast_fullmesh</span>
+
+<p>WGDashboard 插件,用于自动生成 WireGuard 配置(Half Mesh),客户端主动订阅配置,集中管理。</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/xinghenLuyus/fast_fullmesh"><img src="https://github-readme-stats.vercel.app/api/pin/?username=xinghenLuyus&repo=fast_fullmesh&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=xinghenLuyus&repo=fast_fullmesh&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-12-15T11:49:51+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Dec 15, 2025</p>
+  </a>
 </div>
 
+        
+      
+        
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>471 words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>1 min</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.xinghenluyus.cn/2025/12/15/2025-12-15/&title=Wireguard 在 Windows 中的亿点点细节 - Luyus的个人站点&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADA0lEQVR42u3aSXLDMAwEQP3/08k9S5EY0IrgNG9OLItsXqYAXB/Wj+tCAAYMGDBgwIyBucL17Qe//P3086u/nzoPGDBgwIABA2YezHYAWnx/+eIi2C7UqfOAAQMGDBgwYObC7B5stZHqge8Kisv3gQEDBgwYMGD+HczuRlOgbuADAwYMGDBgwIA5VXjqvh8MGDBgwIABA6bdoAqhuo22tCF4WycSDBgwYMCAAXMbTHVVoe7+HJ8HDBgwYMCAATMGpruqAeyu4BafBwwYMGDAgAEzBiYNSLsHrRakVhCnAh4YMGDAgAED5v1g0gLRqY2tfie9iGODQ2DAgAEDBgyYx8GcHgA6BbRbqEoveBnwwIABAwYMGDCPh0kbXNWgt7vx7gBT9YLBgAEDBgwYMPNg0iDVPXg3iHUHlMCAAQMGDBgw82HSwZ7d56v/rxbG4sbab98DAwYMGDBgwIyBSQ+SDvykQe9VBbFy8gUDBgwYMGDAPA4mHeRJA+Kp4NctnIEBAwYMGDBg5sJUCzqnNlr9XC44pcEPDBgwYMCAATMGpgpyqhFXfb4KV71gMGDAgAEDBsx8mO4AUBoMq3DVwla7ggcGDBgwYMCAeTxMNWCdaoRVB5lOXcTx5AsGDBgwYMCAuQ2m29h6VRDb/Z0Utjw4BAYMGDBgwIB5PEy5sNMsEKXQaZCMAx4YMGDAgAEDZjxMtWCUgt99cWDAgAEDBgyY94dJg11amGoHtmrBDQwYMGDAgAEzHiYtAHULT2ngSweGyoUqMGDAgAEDBsxjYLqrG+iqG++CL8HAgAEDBgwYMGNgrnB1N5oOElUHlMoNOjBgwIABAwbMOJhuoEsD2+kG3+5zYMCAAQMGDJj3g+kGqCrEqw4eDyqBAQMGDBgwYP4dTBXgdECsvu/YRBUYMGDAgAEDZjxMtUDULWRVg+V2IQ4MGDBgwIABMxam2nBLg171/XHh6a8Gh8CAAQMGDBgwt8Gkjau0MZYGs24AXF4wGDBgwIABA2YMjAUGDBgwYMCAGbY+AQoJ5Q64popaAAAAAElFTkSuQmCC">
           </div>
-        
+        </div>
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/10/15/2025-10-15/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/10/15/2025-10-15/"  itemprop="url">
-        在腾讯轻量应用服务器部署gitea和runner
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
       
-        gitea真的是太轻量好用啦！
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://blog.xinghenluyus.cn/2025/12/15/2025-12-15/&text=Wireguard 在 Windows 中的亿点点细节 - Luyus的个人站点"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/10/15/2025-10-15/'>
+          <p class='title'>在腾讯轻量应用服务器部署gitea和runner<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>gitea真的是太轻量好用啦！
 1 安装gitea1.1 准备工作
 拥有一台服务器，并且拥有公网ip
 
-我这里是采用了腾讯云的轻量应用云服务器，使用的Ubuntu并安装好了docker。这里采用docker部署。
-1.2 创建目录与权限bash12mkdir -p /srv/gitea/&#123;data,config,logs&#125;chown -R 1000:1000 /srv/g...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-10-15T00:00:00+08:00">2025-10-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/">编程之外</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" itemprop="url"><span itemprop="name">编程之外</span></a>
-            </span>
-          
-        
-      </div>
+我这里是采用了腾讯云的轻量应用云服务器，使用的Ubuntu并安装好了docker。这里采用...</p>
+        </a>
       
     </div>
   
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/09/15/2025-9-15/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
   
-  
-  
+
+
+  <article class="post white-box shadow blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2025/12/15/2025-12-15/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/09/15/2025-9-15/"  itemprop="url">
-        Kubernetes 多节点快速部署
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        目标环境：Ubuntu 20.04 | 3 Master + 2 Worker | keepalived + haproxy VIP(推荐，此处未写) | 容器运行时 containerd
-1 节点规划（企业级 IP 分配）
 
+    <div id="layoutHelper-comments"></div>
 
-主机名
-物理 IP
-角色
-组件
+  </article>
 
 
 
-k8s-m1
-10.10.50.11/24
-Master-1
-kube-apiserver, etcd, controller...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-09-15T00:00:00+08:00">2025-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url"><span itemprop="name">运维</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/08/20/2025-8-20/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/08/20/2025-8-20/"  itemprop="url">
-        如何本地服务化部署PaddleOCR
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        耗时一礼拜阅读完文档摸索出一条PaddleOCR最简单快速部署，并能通过api调用的方法。总结如下：
-1 环境准备
-Lunix系统
-有显卡（我的是RTX4080），并且安装对应驱动
-提前安装了Docker
-
-2 通过镜像拉取环境
-安装含有高性能推理依赖的 PaddleX 官方 Docker 镜像
-
-这里推荐CUDA11.8的版本，全部依赖都是齐全的，而且不会有冲突。安装方法如下：命令参考网站...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-08-20T00:00:00+08:00">2025-08-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/">模型部署</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/" itemprop="url"><span itemprop="name">模型部署</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/08/18/2025-8-18/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/08/18/2025-8-18/"  itemprop="url">
-        如何在Volantis-5主题上使用artalk评论系统(同本站)
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        artalk以私有化部署实现数据自控与极速响应，社交登录、邮件通知、Markdown 等功能开箱即用。话不多说，下面直接上教程。
-这里我犯了很多错一直走回头路，一个配置反复折腾，以下是最简步骤。
-1 在服务端配置 Nginx1.1 准备工作
-拥有一台服务器，并且拥有公网ip
-
-我这里是采用了腾讯云的轻量应用云服务器，使用的Ubuntu并安装好了docker。这里采用docker部署。
-1.2...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-08-18T00:00:00+08:00">2025-08-18</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/">编程之外</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" itemprop="url"><span itemprop="name">编程之外</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/08/05/2025-8-5/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/08/05/2025-8-5/"  itemprop="url">
-        Windows作为Wireguard server多端异地组网解决方案
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        此处为小白教程，更多细节请看我的另一篇博客 &gt; Wireguard 在 Windows 中的亿点点细节 &lt;
-1 前言1.1 背景随着技术的不断革新，个人服务器算力和性能越来越强大，在家部署一台性能不错的主机，然后使用轻薄本远程办公逐渐成为一种解决方案。奈何ip受限，稀少的ipv4地址，复杂的NAT网关，使得公网对局域网的访问难上加难。就算使用Natter加上DDNS临时动态拿到公...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-08-05T00:00:00+08:00">2025-08-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url"><span itemprop="name">计算机网络</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/07/28/2025-7-28/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/28/2025-7-28/"  itemprop="url">
-        解决huggingface.co无法访问
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        将huggingface.co换成镜像源hf-mirror.com即可解决问题。
-1解决方法：export HF_ENDPOINT=https://hf-mirror.com （可以写入到~/.bashrc中，长久可用）
-
-windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mirror.com。
-参考内容如下，如果环境中有HF_ENDPOINT的设定就...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-28T00:00:00+08:00">2025-07-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url"><span itemprop="name">计算机网络</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/06/27/2025-6-27/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/06/27/2025-6-27/"  itemprop="url">
-        SakuraFrp隧道开启https，使用个人域名并配置SSL
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        官方配置文档传送门https://doc.natfrp.com/frpc/ssl.html
-
-我是在项目开发的过程中暂时暴露后端服务与前端通信时遇到的问题。浏览器限制要求必须使用https协议，然而Sakura自带的自签名证书会报错，甚至导致部分服务无法使用。一气之下决定彻底解决这个问题。
-1 准备工作首先，你要拥有一个自己的域名。我的域名都是腾讯云的。SSL证书的注册要求是你自己的域名。
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-06-27T00:00:00+08:00">2025-06-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url"><span itemprop="name">计算机网络</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/06/12/2025-6-12/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/06/12/2025-6-12/"  itemprop="url">
-        Spring Boot 集成 Redis 缓存并使用 FastJSON2 作为序列化器的完整配置指南
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        在现代 Web 应用中，缓存是提升系统性能和减少数据库压力的重要手段。在最基本的SSM开发过程中，Springboot可以方便的将缓存和Redis集成，可以十分便捷的用注解开发。
-个人情怀让我使用fastjson。升级到fastjson2后，原本的autotype被废除，不管是官方给出的代码示例还是论坛社区，都没有对泛型数据的支持，对于特定需求使用起来很不方便。
-泛型：如果你有一个普通 Ja...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-06-12T00:00:00+08:00">2025-06-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java%E5%90%8E%E7%AB%AF/">Java后端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Java%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">Java后端</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/03/30/2025-3-30/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/03/30/2025-3-30/"  itemprop="url">
-        笔记本电脑扩容并将整个D盘迁移到新硬盘
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        相信小伙伴们在使用电脑时经常会出现电脑的硬盘不够用的情况。特别是C盘或者D盘的爆满，这时候单纯的加装硬盘只会让你凭空多一个盘，还是不能解决C盘或者D盘爆满的问题。
-我的个人情况是C，D盘原本处于同一硬盘中，我利用磁盘迁移工具将整个D盘完美复制到了新的E盘，实现彻底的扩容。
-下载工具DiskCopy对比多个工具，DiskCopy最简单易用，功能也较为完善，还很轻量。
-自行前往相应网站下载，我的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-03-30T00:00:00+08:00">2025-03-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url"><span itemprop="name">运维</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 2
-        </p>
-        
-          <a class="next" rel="next" href="/archives/2025/page/2/">
-            <section class="post next white-box shadow blur">
-              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
-  
 
 
-	
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3499,150 +3113,48 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
     
     
       
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java%E5%90%8E%E7%AB%AF/" href="/categories/Java%E5%90%8E%E7%AB%AF/"
-            active-action="action-categoriesJavaE5908EE7ABAF"
-            ><div class='name'>Java后端</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/" href="/categories/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/"
-            active-action="action-categoriesE6A8A1E59E8BE983A8E7BDB2"
-            ><div class='name'>模型部署</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/"
-            active-action="action-categoriesE7BC96E7A88BE4B98BE5A496"
-            ><div class='name'>编程之外</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"
-            active-action="action-categoriesE8AEA1E7AE97E69CBAE7BD91E7BB9C"
-            ><div class='name'>计算机网络</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/"
-            active-action="action-categoriesE8BDAFE4BBB6E4B88BE8BDBD"
-            ><div class='name'>软件下载</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BF%90%E7%BB%B4/" href="/categories/%E8%BF%90%E7%BB%B4/"
-            active-action="action-categoriesE8BF90E7BBB4"
-            ><div class='name'>运维</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Wireguard/" style="font-size: 17.33px; color: #828282">Wireguard</a> <a href="/tags/%E5%85%89%E7%8C%AB/" style="font-size: 14px; color: #999">光猫</a> <a href="/tags/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/" style="font-size: 14px; color: #999">异地组网</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" style="font-size: 14px; color: #999">磁盘管理</a> <a href="/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" style="font-size: 20.67px; color: #6c6c6c">踩坑日记</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>13 篇</div>
-        </div>
-      
-
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>16.5k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="busuanzi_value_site_uv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="busuanzi_value_site_pv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2025-12-15 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Windows-%E6%9D%82%E8%B0%88"><span class="toc-text">1 Windows 杂谈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C"><span class="toc-text">2 命令行操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-IP%E8%BD%AC%E5%8F%91"><span class="toc-text">3 IP转发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E8%B7%A8%E6%8E%A5%E5%8F%A3%E8%BD%AC%E5%8F%91"><span class="toc-text">4 跨接口转发</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3666,13 +3178,14 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3681,14 +3194,14 @@ windows可以创建名为HF_ENDPOINT的系统环境变量，值为https://hf-mir
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4755,7 +4268,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.xinghenluyus.cn/","name":"Luyus的个人站点"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.xinghenluyus.cn/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.xinghenluyus.cn/archives/2025/","name":"2025"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.xinghenluyus.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/"},"publisher":{"@type":"Organization","name":"Luyus的个人站点","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.xinghenluyus.cn/","name":"Luyus的个人站点"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.xinghenluyus.cn/categories/计算机网络/","name":"计算机网络"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.xinghenluyus.cn/2025/12/15/2025-12-15/","name":"Wireguard 在 Windows 中的亿点点细节"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.xinghenluyus.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Wireguard 在 Windows 中的亿点点细节","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.xinghenluyus.cn/2025/12/15/2025-12-15/"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/"},"publisher":{"@type":"Organization","name":"Luyus的个人站点","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.xinghenluyus.cn/2025/12/15/2025-12-15/","wordCount":0,"datePublished":"2025-12-14T16:00:00.000Z","dateModified":"2025-12-15T03:49:51.338Z","articleSection":"计算机网络","keywords":"Wireguard","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
