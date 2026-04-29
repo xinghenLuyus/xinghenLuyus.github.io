@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.xinghenluyus.cn/archives/2025/03/"/>
+  
+  <link rel="canonical" href="https://blog.xinghenluyus.cn/2026/04/29/2026-4-29-2/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -37,19 +37,21 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Luyus的个人站点" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Archive: 2025/3 - Luyus的个人站点</title>
-  <meta name="keywords" content="blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
+  <title>OpenClaw 部署：从 Docker 安装到优雅定制环境 - Luyus的个人站点</title>
+  <meta name="keywords" content="OpenClaw,blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
   <meta desc name="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me. - Luyus - Luyus的个人站点">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Luyus的个人站点">
-<meta property="og:url" content="https://blog.xinghenluyus.cn/archives/2025/03/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenClaw 部署：从 Docker 安装到优雅定制环境">
+<meta property="og:url" content="https://blog.xinghenluyus.cn/2026/04/29/2026-4-29-2/index.html">
 <meta property="og:site_name" content="Luyus的个人站点">
-<meta property="og:description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventur">
+<meta property="og:description" content="选择 Docker 的核心原因是：它能把 OpenClaw 和依赖环境封装在独立容器里，避免污染宿主机系统，也不会和本机 Python、Node 等环境产生冲突；一旦配置出错，可以快速删除容器并重建，试错成本很低；同时 Docker 具备良好的跨平台一致性，无论部署在 Windows、Mac、NAS 还是软路由上，运行环境都尽量保持一致，从而减少因系统差异带来的各种“玄学问题”。 1 为什么需要这">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2026-04-28T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-04-29T07:23:07.105Z">
 <meta property="article:author" content="Luyus">
-<meta property="article:tag" content="blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link">
+<meta property="article:tag" content="OpenClaw">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2410,7 +2412,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2679,7 +2681,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2756,28 +2758,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/03/30/2025-3-30/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2026/04/29/2026-4-29-2/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Luyus的个人站点">
   </span>
@@ -2786,243 +2768,273 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/03/30/2025-3-30/"  itemprop="url">
-        笔记本电脑扩容并将整个D盘迁移到新硬盘
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        相信小伙伴们在使用电脑时经常会出现电脑的硬盘不够用的情况。特别是C盘或者D盘的爆满，这时候单纯的加装硬盘只会让你凭空多一个盘，还是不能解决C盘或者D盘爆满的问题。
-我的个人情况是C，D盘原本处于同一硬盘中，我利用磁盘迁移工具将整个D盘完美复制到了新的E盘，实现彻底的扩容。
-下载工具DiskCopy对比多个工具，DiskCopy最简单易用，功能也较为完善，还很轻量。
-自行前往相应网站下载，我的...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        OpenClaw 部署：从 Docker 安装到优雅定制环境
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2026-04-29T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Apr 29, 2026</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/">模型部署</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/" itemprop="url"><span itemprop="name">模型部署</span></a>
+      </span>
     
   </div>
+
+
+          
+        
+          
+            
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-03-30T00:00:00+08:00">2025-03-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url"><span itemprop="name">运维</span></a>
-            </span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/OpenClaw/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>OpenClaw</p></a></div>
+  <span hidden itemprop="keywords">OpenClaw</span>
+
+
           
         
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>选择 Docker 的核心原因是：它能把 OpenClaw 和依赖环境封装在独立容器里，避免污染宿主机系统，也不会和本机 Python、Node 等环境产生冲突；一旦配置出错，可以快速删除容器并重建，试错成本很低；同时 Docker 具备良好的跨平台一致性，无论部署在 Windows、Mac、NAS 还是软路由上，运行环境都尽量保持一致，从而减少因系统差异带来的各种“玄学问题”。</p>
+<h2 id="1-为什么需要这篇教程？"><a href="#1-为什么需要这篇教程？" class="headerlink" title="1 为什么需要这篇教程？"></a>1 为什么需要这篇教程？</h2><ol>
+<li><strong>依赖清零</strong>：进入运行中的容器用 <code>apt-get install</code> 安装了工具，结果容器一重启，刚装的工具全没了。这是因为 Docker 容器本身是无状态的。</li>
+<li><strong>升级冲突</strong>：为了永久保留工具，新手会直接修改项目自带的 <code>Dockerfile</code> 将依赖“烘焙”进去。然而等官方出新版本，运行 <code>git pull</code> 升级时，立刻爆出数十个代码合并冲突。</li>
+</ol>
+<h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2 安装"></a>2 安装</h2><div class="timeline">
+<div class="timenode"><div class="meta"><p><ol>
+<li>拉取项目源码</li>
+</ol>
+</p></div><div class="body"><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/openclaw/openclaw.git</span><br><span class="line"><span class="built_in">cd</span> openclaw</span><br></pre></td></tr></table></figure></div></div>
+
+<div class="timenode"><div class="meta"><p><ol start="2">
+<li>跟随官方文档先跑通配置）</li>
+</ol>
+</p></div><div class="body"><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 从仓库根目录运行设置脚本</span></span><br><span class="line">./scripts/docker/setup.sh</span><br></pre></td></tr></table></figure></div></div>
+
+<div class="timenode"><div class="meta"><p><ol start="3">
+<li>创建专属底层，防止污染源代码</li>
+</ol>
+</p></div><div class="body"><ul><li>在当前项目根目录下新建 <code>Dockerfile.custom</code> 。</li></ul><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 继承官方最新镜像作为地基</span></span><br><span class="line"><span class="keyword">FROM</span> ghcr.io/openclaw/openclaw:latest</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 切换到 root 权限来安装系统级别的依赖</span></span><br><span class="line"><span class="keyword">USER</span> root</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 这里写你想要安装的软件！例如安装 wget, curl, vim 或其他需要的库</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> apt-get update &amp;&amp; apt-get install -y \</span></span><br><span class="line"><span class="language-bash">    wget \</span></span><br><span class="line"><span class="language-bash">    curl \</span></span><br><span class="line"><span class="language-bash">    vim \</span></span><br><span class="line"><span class="language-bash">    &amp;&amp; <span class="built_in">rm</span> -rf /var/lib/apt/lists/*</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 依赖装完后，务必切回默认的安全运行身份，防止越权</span></span><br><span class="line"><span class="keyword">USER</span> node</span><br></pre></td></tr></table></figure><ul><li>同样位置新建 <code>docker-compose.override.yml</code> 。</li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">openclaw-gateway:</span></span><br><span class="line">    <span class="comment"># 告诉 Docker 用我们自己的镜像名称</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">openclaw-gateway:custom</span></span><br><span class="line">    <span class="attr">build:</span></span><br><span class="line">      <span class="attr">context:</span> <span class="string">.</span></span><br><span class="line">      <span class="comment"># 指向刚才创建的自定义镜像打包脚本</span></span><br><span class="line">      <span class="attr">dockerfile:</span> <span class="string">Dockerfile.custom</span></span><br></pre></td></tr></table></figure><ul><li>修改env中镜像名称</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">OPENCLAW_IMAGE=openclaw-gateway:custom</span><br></pre></td></tr></table></figure></div></div>
+</div>
+
+<h2 id="3-启动"><a href="#3-启动" class="headerlink" title="3 启动"></a>3 启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动构建（耐心等待下载并打包你的自定义工具）</span></span><br><span class="line">docker compose build openclaw-gateway</span><br><span class="line"></span><br><span class="line"><span class="comment"># 后台平滑启动服务</span></span><br><span class="line">docker compose up -d openclaw-gateway</span><br></pre></td></tr></table></figure>
+<p>等待运行完成后，你的自定义工具 (如 <code>curl</code>, <code>vim</code>) 已经永久烙印在 OpenClaw 容器内部！无论重启多少次或者迁移服务器都完好无缺。</p>
+<h2 id="4-升级版本"><a href="#4-升级版本" class="headerlink" title="4 升级版本"></a>4 升级版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 拉取最新官方代码库（因为核心文件0改动，绝对不会报错）</span></span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 基于新的官方底层，顺手加上你的那些自定义工具重新成新底座</span></span><br><span class="line">docker compose build openclaw-gateway</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 后台重启应用最新镜像</span></span><br><span class="line">docker compose up -d openclaw-gateway</span><br></pre></td></tr></table></figure>
+<p>采用这套架构后，你在本地的开发环境拥有了极强的生命力。由于你的自定义操作全部分散在互不干涉的新文件里（<code>Dockerfile.custom</code> 等），<strong>从头到尾你都没有碰过任何一个官方自带的代码文件</strong>。</p>
+<div class="note warning"><p>文件跨系统时，Git 经常会错误识别一大堆文件权限发生改变（从 644 变成 755），导致你后续无法拉取更新。解决方案-&gt; git config core.fileMode false</p></div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-04-29T15:23:07+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Apr 29, 2026</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/03/18/2025-3-18/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>794 words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>3 min</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.xinghenluyus.cn/2026/04/29/2026-4-29-2/&title=OpenClaw 部署：从 Docker 安装到优雅定制环境 - Luyus的个人站点&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADBElEQVR42u3aSXLDMAwEQP3/08kH4hIxgB3Dbt68iBJalymA14/157oQgAEDBgwYMGtgrnA93PjB/+6uP/3/6T5pPWDAgAEDBgyYfTDHAagIc1fYo9+r4FP1gAEDBgwYMGD2wlQfvBrEqoVUg2a7HjBgwIABAwbM18Gk+02BgQEDBgwYMGDAdANeu1E03OgCAwYMGDBgwHwPzFQhU4Ox6WD4skkkGDBgwIABA+ZlMNXVbVw9+3NcDxgwYMCAAQNmDUx3VeGqwa26b7seMGDAgAEDBswamDQgpXBpcJsOeGDAgAEDBgyYz4W5e6D092rBpweIut+DAQMGDBgwYPbCnG7YbRyl1x8HtOaBJTBgwIABAwbMHpg02FUDWbWQ7oGldHAHBgwYMGDAgNkDU71xerB4OvBND/zAgAEDBgwYMHthTkHSIFYNYGnjKn3RYMCAAQMGDJh9MOnAKy14qjGWBs/jgAcGDBgwYMCAWQuTBrc0CHYHcdUXFh8cAgMGDBgwYMC8HUzauKr+fnrfFKz6HLeNKjBgwIABAwbM28JMNXrSYHXagOped1wXGDBgwIABA2YNTDc4TTWYqoO+dCA43sEDAwYMGDBgwPw7TPcgUTeYdQd2Y0EVDBgwYMCAAbMepgqSAnYbWePPCwYMGDBgwIBZA9MdpFUbRlODu7QBdhzwwIABAwYMGDBrYcYGWOF11ReXNr7KAQ8MGDBgwIAB87YwUweE0gefeo74MxgwYMCAAQPm42C6B4K6Qa4bSI9fJBgwYMCAAQNmDUx3TQewu4LTgHi6LxgwYMCAAQNmD8wVripYOnDrDvLKjTMwYMCAAQMGzDqYbkOpenC5ev/0YHb1xYIBAwYMGDBg9sJUg1naKEr/Vx0MloMpGDBgwIABA+brYJ5V8GlATA9AHZ+oAgMGDBgwYMB8LEy1MVX9PoUoHzQCAwYMGDBgwKyFqQav6X2mBmf/fnAIDBgwYMCAAfMymHRw1R3IVQvvBsDbFwwGDBgwYMCAWQNjgQEDBgwYMGCWrV/pAuMsEVXTLwAAAABJRU5ErkJggg==">
+          </div>
+        </div>
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://blog.xinghenluyus.cn/2026/04/29/2026-4-29-2/&text=OpenClaw 部署：从 Docker 安装到优雅定制环境 - Luyus的个人站点"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2026/04/29/2026-4-29/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Linux最快部署clash代理</p>
+          <p class='content'>1 先决条件
+主流Linux发行版
+mihomo内核
+完全命令行操作
+
+项目地址https://github.com/nelvko/clash-for-linux-install/
+
+2 安装
+...</p>
+        </a>
+      
+      
+        <a class='next' href='/2025/12/15/2025-12-15/'>
+          <p class='title'>Wireguard 在 Windows 中的亿点点细节<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>1 Windows 杂谈作为使用人数最多，覆盖最广的操作系统，是组网绕不开的。且不说60%的开发者使都使用Windows开发程序，很多的游戏，剪辑软件，显卡驱动都更加贴合Windows。
+Lin...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2026/04/29/2026-4-29-2/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/03/18/2025-3-18/"  itemprop="url">
-        中兴光猫(ZXHN 7000M)改桥接
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        我采用ztuOnu工具刷光猫进入telnet。话不多说，直接开始。
-1 将光猫恢复出厂设置拔掉光纤，捅光猫的恢复出厂设置(RESET)按键，重置光猫。
-光猫重置后，原先业务下发会被取消，内置的超级管理员账户会恢复初始默认的密码aDm8H%MdA，之后千万不要插入光纤，不然业务会下发，超级管理员密码会被运营商篡改。
-2 下载工具ztuOnu到ztuOnu的github发布页，下载对应版本。
-我...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-03-18T00:00:00+08:00">2025-03-18</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url"><span itemprop="name">计算机网络</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/03/15/2025-3-15/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/03/15/2025-3-15/"  itemprop="url">
-        解决Windows下本地Maven仓库修改repository路径，文件夹始终为空
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        我在使用IDEA构建Springboot项目时，修改了项目的默认Maven，改成了我新下载的本地Maven仓库。
-在使用.xml文件进行配置时，IDEA报错：
-1未解析的依赖项: &#x27;org.mybatis:mybatis-spring:jar:2.0.6&#x27;
-
-我在网上搜索了各种教程和相关资料，都没有得到解决。最后当我打开Maven的自定义本地仓库文件夹，居然发现里面是空的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-03-15T00:00:00+08:00">2025-03-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/">软件下载</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" itemprop="url"><span itemprop="name">软件下载</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.xinghenluyus.cn/2025/03/10/2025-3-10/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Luyus的个人站点">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Luyus的个人站点">
-    <meta itemprop="description" content="星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/03/10/2025-3-10/"  itemprop="url">
-        从零搭建个人博客（基于Hexo，使用Volantis主题，部署在github并上传cdn）
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        这是我的第一篇博客，也是本站的部署记录。
-1 前言相信每一个想部署个人博客的小伙伴们都想快速上手个人博客。在众多框架中，hexo以庞大的使用群体胜出，成为了我的选择。而Volantis主题又以清新脱俗的小众化吸引了我的注意。
-在网站的部署上，我选择部署在GitHub pages（毕竟谁不喜欢有稳定又白能嫖的渠道呢）。碍于国内访问速度过慢，我将网站上传CDN提升国内访问速度，并使用了自己的域名...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-03-10T00:00:00+08:00">2025-03-10</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/">编程之外</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" itemprop="url"><span itemprop="name">编程之外</span></a>
-            </span>
-          
-        
-      </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3091,150 +3103,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java%E5%90%8E%E7%AB%AF/" href="/categories/Java%E5%90%8E%E7%AB%AF/"
-            active-action="action-categoriesJavaE5908EE7ABAF"
-            ><div class='name'>Java后端</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/" href="/categories/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/"
-            active-action="action-categoriesE6A8A1E59E8BE983A8E7BDB2"
-            ><div class='name'>模型部署</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/" href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%96/"
-            active-action="action-categoriesE7BC96E7A88BE4B98BE5A496"
-            ><div class='name'>编程之外</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"
-            active-action="action-categoriesE8AEA1E7AE97E69CBAE7BD91E7BB9C"
-            ><div class='name'>计算机网络</div><div class='badge'>(6)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/"
-            active-action="action-categoriesE8BDAFE4BBB6E4B88BE8BDBD"
-            ><div class='name'>软件下载</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%BF%90%E7%BB%B4/" href="/categories/%E8%BF%90%E7%BB%B4/"
-            active-action="action-categoriesE8BF90E7BBB4"
-            ><div class='name'>运维</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Clash/" style="font-size: 14px; color: #999">Clash</a> <a href="/tags/OpenClaw/" style="font-size: 14px; color: #999">OpenClaw</a> <a href="/tags/Wireguard/" style="font-size: 17.33px; color: #828282">Wireguard</a> <a href="/tags/%E5%85%89%E7%8C%AB/" style="font-size: 14px; color: #999">光猫</a> <a href="/tags/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/" style="font-size: 14px; color: #999">异地组网</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" style="font-size: 14px; color: #999">磁盘管理</a> <a href="/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" style="font-size: 20.67px; color: #6c6c6c">踩坑日记</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>15 篇</div>
-        </div>
-      
-
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>17.6k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="busuanzi_value_site_uv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="busuanzi_value_site_pv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2026-04-29 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E8%BF%99%E7%AF%87%E6%95%99%E7%A8%8B%EF%BC%9F"><span class="toc-text">1 为什么需要这篇教程？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85"><span class="toc-text">2 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%90%AF%E5%8A%A8"><span class="toc-text">3 启动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC"><span class="toc-text">4 升级版本</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3258,13 +3168,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3273,14 +3184,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4348,7 +4259,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.xinghenluyus.cn/","name":"Luyus的个人站点"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.xinghenluyus.cn/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.xinghenluyus.cn/archives/2025/","name":"2025"}},{"@type":"ListItem","position":4,"item":{"@id":"https://blog.xinghenluyus.cn/archives/2025/3/","name":"3"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.xinghenluyus.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/"},"publisher":{"@type":"Organization","name":"Luyus的个人站点","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","sameAs":["https://github.com/volantis-x"],"description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.xinghenluyus.cn/","name":"Luyus的个人站点"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.xinghenluyus.cn/categories/模型部署/","name":"模型部署"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.xinghenluyus.cn/2026/04/29/2026-4-29-2/","name":"OpenClaw 部署：从 Docker 安装到优雅定制环境"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","keywords":"blog, Luyus, tech, technology, programming, network, operation, system, development, learning, sharing, growth, exploration, adventure, journey, record, explore, discover, study, research, experience, knowledge, information, resource, guide, tutorial, solution, problem, challenge, solution, code, script, tool, software, hardware, service, platform, website, blog, post, article, content, writing, reading, thinking, idea, thought, opinion, view, perspective, insight, inspiration, motivation, encouragement, support, help, assistance, advice, suggestion, recommendation, reference, resource, link","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me."},"publisher":{"@type":"Organization","name":"Luyus的个人站点","url":"https://blog.xinghenluyus.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.xinghenluyus.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"OpenClaw 部署：从 Docker 安装到优雅定制环境","description":"星痕的个人博客——Luyus的技术之旅，专注于技术学习与分享。在这里，我将记录自己在编程、网络、运维等领域的探索历程，与你一同成长。Star Trace’s Personal Blog – Luyus’ Tech Journey, dedicated to the exploration and sharing of technology. Here, I document my adventures in programming, networking, and system operations, inviting you to grow alongside me.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.xinghenluyus.cn/2026/04/29/2026-4-29-2/"},"author":{"@type":"Person","name":"Luyus","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.xinghenluyus.cn/"},"publisher":{"@type":"Organization","name":"Luyus的个人站点","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.xinghenluyus.cn/2026/04/29/2026-4-29-2/","wordCount":0,"datePublished":"2026-04-28T16:00:00.000Z","dateModified":"2026-04-29T07:23:07.105Z","articleSection":"模型部署","keywords":"OpenClaw","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
